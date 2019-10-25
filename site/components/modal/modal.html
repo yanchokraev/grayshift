@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Modal</title>
+  <meta name="description" content="#">
+  <link rel="stylesheet" href="../../../dist/css/grayshift.min.css">
+</head>
+<body>
+  <main>
+    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modal" type="button">Modal</button>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="modalLabel">Compose</h4>
+            <button class="btn btn-circle btn-neutral align-self-start" data-dismiss="modal" type="button" aria-label="Close">
+              <i data-eva="close" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="recipient">Recipient:</label>
+              <input class="form-control form-control-lg mb-5" id="recipient" type="text" placeholder="Recipient">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Type message..."></textarea>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-block btn-lg btn-primary" type="submit">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../dist/js/jquery-slim.min.js"></script>
+  <script src="../../../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../dist/js/eva.min.js"></script>
+  <script>
+  eva.replace()
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <meta name="description" content="#">
+  <link rel="stylesheet" href="../../../dist/css/grayshift.min.css">
+</head>
+<body>
+  <main>
+    <div class="d-flex align-items-center min-vh-100 py-11 mx-auto" style="max-width: 436px;">
+      <div class="container">
+        <div class="card">
+          <div class="card-body p-sm-9">
+            <form>
+              <h2 class="mb-5">Login</h2>
+              <label class="sr-only" for="username">Username</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i data-eva="person"></i>
+                </div>
+                <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" required>
+              </div>
+              <label class="sr-only" for="password">Password</label>
+              <div class="input-group mb-5">
+                <div class="input-group-prepend">
+                  <i data-eva="lock"></i>
+                </div>
+                <input class="form-control form-control-lg" id="password" type="password" placeholder="Password" required>
+              </div>
+              <a class="text-primary" href="#">Forgot password?</a>
+              <button class="btn btn-block btn-lg btn-primary mt-3" type="submit">Sign In</button>
+              <p class="mt-5 text-center">Don't have account? <a class="text-primary" href="#">Register</a>.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../dist/js/jquery-slim.min.js"></script>
+  <script src="../../../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../dist/js/eva.min.js"></script>
+  <script>
+  eva.replace()
+  </script>
+</body>
+</html>

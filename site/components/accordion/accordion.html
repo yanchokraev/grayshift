@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Accordion</title>
+  <meta name="description" content="#">
+  <link rel="stylesheet" href="../../../dist/css/grayshift.min.css">
+</head>
+<body>
+  <main>
+    <div class="py-11 mx-auto" style="max-width: 720px;">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-5 fw-700">Accordion</h2>
+          <p class="mb-11 h5">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div class="accordion" id="accordionOne">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+              <div class="mr-auto">
+                <h6 class="mb-1 lh-150">Accordion</h6>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <span class="badge badge-primary d-none d-sm-inline-block mr-3">New</span>
+              <i data-eva="arrow-ios-forward"></i>
+              <i data-eva="arrow-ios-downward"></i>
+            </div>
+            <div class="collapse" id="collapseOne" data-parent="#accordionOne" aria-labelledby="headingOne">
+              <div class="accordion-body">
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="mr-auto">
+                <h6 class="mb-1 lh-150">Accordion</h6>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <i data-eva="arrow-ios-forward"></i>
+              <i data-eva="arrow-ios-downward"></i>
+            </div>
+            <div class="collapse" id="collapseTwo" data-parent="#accordionOne" aria-labelledby="headingTwo">
+              <div class="accordion-body">
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+              <div class="mr-auto">
+                <h6 class="mb-1 lh-150">Accordion</h6>
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+              <i data-eva="arrow-ios-forward"></i>
+              <i data-eva="arrow-ios-downward"></i>
+            </div>
+            <div class="collapse" id="collapseThree" data-parent="#accordionOne" aria-labelledby="headingThree">
+              <div class="accordion-body">
+                <p>The quick brown fox jumps over the lazy dog.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../dist/js/jquery-slim.min.js"></script>
+  <script src="../../../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../dist/js/eva.min.js"></script>
+  <script>
+  eva.replace()
+  </script>
+</body>
+</html>

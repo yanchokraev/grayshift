@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Checkout</title>
+  <meta name="description" content="#">
+  <link rel="stylesheet" href="../../../dist/css/grayshift.min.css">
+</head>
+<body>
+  <main>
+    <div class="py-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card mb-5">
+              <div class="card-body">
+                <h5>Billing Address</h5>
+                <hr>
+                <form>
+                  <div class="row">
+                    <div class="col-sm">
+                      <label for="firstName">First Name</label>
+                      <input class="form-control form-control-lg mb-5" id="firstName" type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="col-sm">
+                      <label for="lastName">Last Name</label>
+                      <input class="form-control form-control-lg mb-5" id="lastName" type="text" placeholder="Last Name" required>
+                    </div>
+                  </div>
+                  <label for="address">Address</label>
+                  <input class="form-control form-control-lg mb-5" id="address" type="text" placeholder="Address" required>
+                  <div class="row">
+                    <div class="col-sm">
+                      <label for="country">Country</label>
+                      <input class="form-control form-control-lg mb-5" id="country" type="text" placeholder="Country" required>
+                    </div>
+                    <div class="col-sm">
+                      <label for="city">City</label>
+                      <input class="form-control form-control-lg mb-5" id="city" type="text" placeholder="City" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <label for="postalCode">Postal Code</label>
+                      <input class="form-control form-control-lg mb-5 mb-sm-0" id="postalCode" type="text" placeholder="Postal Code" required>
+                    </div>
+                    <div class="col-sm">
+                      <label for="phone">Phone</label>
+                      <input class="form-control form-control-lg" id="phone" type="text" placeholder="+1-888-888-8888" required>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5>Credit Card</h5>
+                <hr>
+                <form>
+                  <label for="cardNumber">Card Number</label>
+                  <div class="input-group mb-5">
+                    <input class="form-control form-control-lg" id="cardNumber" type="text" placeholder="8888 8888 8888 8888" required>
+                    <div class="input-group-append">
+                      <i data-eva="credit-card"></i>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="nameOnCard">Name on Card</label>
+                      <input class="form-control form-control-lg mb-5 mb-md-0" id="nameOnCard" type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="expiration">Expiration</label>
+                      <input class="form-control form-control-lg mb-5 mb-md-0" id="expiration" type="text" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="cvv">CVV</label>
+                      <div class="input-group">
+                        <input class="form-control form-control-lg" id="cvv" type="text" placeholder="888" required>
+                        <div class="input-group-append">
+                          <i data-eva="question-mark-circle"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card sticky-top z-index-lower" style="top: 32px;">
+              <div class="card-body">
+                <h5 class="mb-5">Cart</h5>
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-center mb-3">
+                    VPS Basic
+                    <span class="badge badge-neutral ml-auto">€160</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    ICANN Fee
+                    <span class="badge badge-neutral ml-auto">€80</span>
+                  </li>
+                </ul>
+                <hr>
+                <ul class="list-unstyled mb-5">
+                  <li class="d-flex align-items-center">
+                    Total
+                    <span class="badge badge-neutral ml-auto">€240</span>
+                  </li>
+                </ul>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <i data-eva="pricetags"></i>
+                  </div>
+                  <input class="form-control form-control-lg" type="text" placeholder="Coupon">
+                </div>
+                <button class="btn btn-block btn-lg btn-primary" type="submit">Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../dist/js/jquery-slim.min.js"></script>
+  <script src="../../../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../dist/js/eva.min.js"></script>
+  <script>
+  eva.replace()
+  </script>
+</body>
+</html>
