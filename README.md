@@ -82,3 +82,23 @@ A lightweight front-end component library for developing fast and powerful web i
     │   ├── taskwell.css
     │   ├── taskwell.min.css
 </code></pre>
+<h2>Browser support</h2>
+<p>Grayshift supports the latest, stable releases of all modern browsers and platforms.</p>
+<table>
+  <thead>
+    <tr>
+      <th><img src="https://camo.githubusercontent.com/26846e979600799e9f4273d38bd9e5cb7bb8d6d0/68747470733a2f2f7261772e6769746875622e636f6d2f616c7272612f62726f777365722d6c6f676f732f6d61737465722f7372632f6368726f6d652f6368726f6d655f34387834382e706e67" alt="Google Chrome"></th>
+      <th><img src="https://camo.githubusercontent.com/6087557f69ec6585eb7f8d7bd7d9ecb6b7f51ba1/68747470733a2f2f7261772e6769746875622e636f6d2f616c7272612f62726f777365722d6c6f676f732f6d61737465722f7372632f66697265666f782f66697265666f785f34387834382e706e67" alt="Mozilla Firefox"></th>
+      <th><img src="https://camo.githubusercontent.com/6fbaeb334b99e74ddd89190a42766ea3b4600d2c/68747470733a2f2f7261772e6769746875622e636f6d2f616c7272612f62726f777365722d6c6f676f732f6d61737465722f7372632f7361666172692f7361666172695f34387834382e706e67" alt="Safari"></th>
+      <th><img src="https://camo.githubusercontent.com/96d2405a936da1fb8988db0c1d304d3db04b8a52/68747470733a2f2f7261772e6769746875622e636f6d2f616c7272612f62726f777365722d6c6f676f732f6d61737465722f7372632f6f706572612f6f706572615f34387834382e706e67" alt="Opera"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Latest ✔</td>
+      <td>Latest ✔</td>
+      <td>Latest ✔</td>
+      <td>Latest ✔</td>
+    </tr>
+  </tbody>
+</table>
