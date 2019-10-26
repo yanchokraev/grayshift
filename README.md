@@ -14,7 +14,18 @@ A lightweight front-end component library for developing fast and powerful web i
    · 
   <a href="https://grayshift.io/contacts/">Contacts</a>
 </p>
-<h2>What's included</h2>
+<h2>Table of contents</h2>
+<ul>
+  <li>
+    <a href="#whats-included">What's included</a>
+  </li>
+  <li>
+    <a href="#browser-support">Browser support</a>
+  </li>
+</ul>
+<h2>
+  <a class="anchor" id="user-content-whats-included" aria-hidden="true" href="#whats-included">What's included</a>
+</h2>
 <p>Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:</p>
 <pre lang="text"><code>grayshift/
 └── dist/
@@ -82,7 +93,9 @@ A lightweight front-end component library for developing fast and powerful web i
     │   ├── taskwell.css
     │   ├── taskwell.min.css
 </code></pre>
-<h2>Browser support</h2>
+<h2>
+  <a class="anchor" id="user-content-browser-support" aria-hidden="true" href="#browser-support">Browser support</a>
+</h2>
 <p>Grayshift supports the latest, stable releases of all modern browsers and platforms.</p>
 <table>
   <thead>
