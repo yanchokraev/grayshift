@@ -68,8 +68,8 @@ A lightweight front-end component library for developing fast and powerful web i
     └── modal/
     │   ├── modal.html
     └── accordion/
-    │   ├── accordion.html
-    │   ├── accordion-2.html
+        ├── accordion.html
+        ├── accordion-2.html
 </code></pre>
 <h2>
   <a class="anchor" id="user-content-browser-support" aria-hidden="true" href="#browser-support">Browser support</a>
