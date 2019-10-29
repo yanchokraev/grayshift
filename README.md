@@ -24,52 +24,52 @@ A lightweight front-end component library for developing fast and powerful web i
 │       ├── grayshift.css
 │       ├── grayshift.min.css
 └── components/
-│   ├── navbar/
-│   │   ├── navbar.html
-│   └── breadcrumb/
-│   │   ├── breadcrumb.html
-│   └── pagination/
-│   │   ├── pagination.html
-│   └── footer/
-│   │   ├── footer.html
-│   └── jumbotron/
-│   │   ├── jumbotron.html
-│   │   ├── jumbotron-2.html
-│   └── features/
-│   │   ├── features.html
-│   │   ├── features-2.html
-│   │   ├── features-3.html
-│   └── pricing/
-│   │   ├── pricing.html
-│   └── applicants/
-│   │   ├── applicants.html
-│   │   ├── applicants-2.html
-│   │   ├── applicants.css
-│   │   ├── applicants.min.css
-│   └── blog/
-│   │   ├── blog.html
-│   │   ├── article.html
-│   │   ├── article.css
-│   │   ├── article.min.css
-│   └── checkout/
-│   │   ├── checkout.html
-│   └── testimonials/
-│   │   ├── testimonials.html
-│   └── contacts/
-│   │   ├── contacts.html
-│   └── dropzone/
-│   │   ├── dropzone.html
-│   │   ├── dropzone.css
-│   │   ├── dropzone.min.css
-│   └── authentication/
-│   │   ├── login.html
-│   └── table/
-│   │   ├── table.html
-│   └── modal/
-│   │   ├── modal.html
-│   └── accordion/
-│   │   ├── accordion.html
-│   │   ├── accordion-2.html
+    ├── navbar/
+    │   ├── navbar.html
+    └── breadcrumb/
+    │   ├── breadcrumb.html
+    └── pagination/
+    │   ├── pagination.html
+    └── footer/
+    │   ├── footer.html
+    └── jumbotron/
+    │   ├── jumbotron.html
+    │   ├── jumbotron-2.html
+    └── features/
+    │   ├── features.html
+    │   ├── features-2.html
+    │   ├── features-3.html
+    └── pricing/
+    │   ├── pricing.html
+    └── applicants/
+    │   ├── applicants.html
+    │   ├── applicants-2.html
+    │   ├── applicants.css
+    │   ├── applicants.min.css
+    └── blog/
+    │   ├── blog.html
+    │   ├── article.html
+    │   ├── article.css
+    │   ├── article.min.css
+    └── checkout/
+    │   ├── checkout.html
+    └── testimonials/
+    │   ├── testimonials.html
+    └── contacts/
+    │   ├── contacts.html
+    └── dropzone/
+    │   ├── dropzone.html
+    │   ├── dropzone.css
+    │   ├── dropzone.min.css
+    └── authentication/
+    │   ├── login.html
+    └── table/
+    │   ├── table.html
+    └── modal/
+    │   ├── modal.html
+    └── accordion/
+    │   ├── accordion.html
+    │   ├── accordion-2.html
 </code></pre>
 <h2>
   <a class="anchor" id="user-content-browser-support" aria-hidden="true" href="#browser-support">Browser support</a>
