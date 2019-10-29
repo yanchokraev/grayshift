@@ -20,56 +20,56 @@ A lightweight front-end component library for developing fast and powerful web i
 <p>Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:</p>
 <pre lang="text"><code>grayshift/
 └── dist/
-│   ├── css/
+│   └── css/
 │       ├── grayshift.css
-│       ├── grayshift.min.css
+│       └── grayshift.min.css
 └── components/
     ├── navbar/
-    │   ├── navbar.html
+    │   └── navbar.html
     └── breadcrumb/
-    │   ├── breadcrumb.html
+    │   └── breadcrumb.html
     └── pagination/
-    │   ├── pagination.html
+    │   └── pagination.html
     └── footer/
-    │   ├── footer.html
+    │   └── footer.html
     └── jumbotron/
     │   ├── jumbotron.html
-    │   ├── jumbotron-2.html
+    │   └── jumbotron-2.html
     └── features/
     │   ├── features.html
     │   ├── features-2.html
-    │   ├── features-3.html
+    │   └── features-3.html
     └── pricing/
-    │   ├── pricing.html
+    │   └── pricing.html
     └── applicants/
     │   ├── applicants.html
     │   ├── applicants-2.html
     │   ├── applicants.css
-    │   ├── applicants.min.css
+    │   └── applicants.min.css
     └── blog/
     │   ├── blog.html
     │   ├── article.html
     │   ├── article.css
-    │   ├── article.min.css
+    │   └── article.min.css
     └── checkout/
-    │   ├── checkout.html
+    │   └── checkout.html
     └── testimonials/
-    │   ├── testimonials.html
+    │   └── testimonials.html
     └── contacts/
-    │   ├── contacts.html
+    │   └── contacts.html
     └── dropzone/
     │   ├── dropzone.html
     │   ├── dropzone.css
-    │   ├── dropzone.min.css
+    │   └── dropzone.min.css
     └── authentication/
-    │   ├── login.html
+    │   └── login.html
     └── table/
-    │   ├── table.html
+    │   └── table.html
     └── modal/
-    │   ├── modal.html
+    │   └── modal.html
     └── accordion/
         ├── accordion.html
-        ├── accordion-2.html
+        └── accordion-2.html
 </code></pre>
 <h2>
   <a class="anchor" id="user-content-browser-support" aria-hidden="true" href="#browser-support">Browser support</a>
