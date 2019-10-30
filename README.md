@@ -66,8 +66,10 @@ A lightweight front-end component library for developing fast and powerful web i
     └── modal/
     │   └── modal.html
     └── accordion/
-        ├── accordion.html
-        └── accordion-2.html
+    │   ├── accordion.html
+    │   └── accordion-2.html
+    └── starter-template/
+        └── starter-template.html
 </code></pre>
 <h2>Browser support</h2>
 <p>Grayshift supports the latest, stable releases of all modern browsers and platforms.</p>
