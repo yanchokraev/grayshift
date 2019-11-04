@@ -1,3 +1,13 @@
+:root {
+  --border-dashed-color: var(--light-900);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-dashed-color: var(--dark-100);
+  }
+}
+
 .dropzone {
   display: inline-block;
   width: 100%;
@@ -7,7 +17,7 @@
   text-align: center;
   cursor: pointer;
   background-color: var(--card-bg);
-  border: var(--border-dashed);
+  border: 1px dashed var(--border-dashed-color);
   border-radius: var(--border-radius-lg);
   transition: background-color .4s ease;
 }
