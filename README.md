@@ -59,7 +59,7 @@ A lightweight front-end component library for developing fast and powerful web i
     │   ├── dropzone.html
     │   ├── dropzone.css
     │   └── dropzone.min.css
-    └── authentication/
+    └── login/
     │   └── login.html
     └── table/
     │   └── table.html
