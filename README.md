@@ -97,3 +97,5 @@ A lightweight front-end component library for developing fast and powerful web i
     </tr>
   </tbody>
 </table>
+
+<p>Thanks to Bootstrap for the build process inspiration.</p>
