@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.0 (https://grayshift.io)
+* Grayshift v1.1.1 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -76,7 +76,6 @@
   --fill-bg: var(--light-600);
   --fill-active-bg: var(--white);
   --progress-bg: var(--light-900);
-  --border-color: var(--light-400);
   --border-radius-lg: .5rem;
   --border-radius-sm: .25rem;
 }
@@ -94,7 +93,6 @@
     --fill-bg: var(--dark-300);
     --fill-active-bg: hsl(0,0%,44%);
     --progress-bg: var(--dark-100);
-    --border-color: var(--dark-300);
   }
 }
 
@@ -6232,7 +6230,7 @@
 }
 
 .border {
-  border: 2px solid var(--border-color) !important;
+  border: 2px solid var(--fill-bg) !important;
 }
 
 .border-0 {
@@ -6240,19 +6238,19 @@
 }
 
 .border-top {
-  border-top: 2px solid var(--border-color) !important;
+  border-top: 2px solid var(--fill-bg) !important;
 }
 
 .border-right {
-  border-right: 2px solid var(--border-color) !important;
+  border-right: 2px solid var(--fill-bg) !important;
 }
 
 .border-bottom {
-  border-bottom: 2px solid var(--border-color) !important;
+  border-bottom: 2px solid var(--fill-bg) !important;
 }
 
 .border-left {
-  border-left: 2px solid var(--border-color) !important;
+  border-left: 2px solid var(--fill-bg) !important;
 }
 
 .rounded {

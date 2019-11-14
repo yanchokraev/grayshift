@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.0 (https://grayshift.io)
+* Grayshift v1.1.1 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -76,7 +76,6 @@
   --fill-bg: var(--light-600);
   --fill-active-bg: var(--white);
   --progress-bg: var(--light-900);
-  --border-color: var(--light-400);
   --border-radius-lg: .5rem;
   --border-radius-sm: .25rem;
 }
@@ -94,7 +93,6 @@
     --fill-bg: var(--dark-300);
     --fill-active-bg: hsl(0,0%,44%);
     --progress-bg: var(--dark-100);
-    --border-color: var(--dark-300);
   }
 }
 
@@ -106,7 +104,7 @@
 
 body {
   margin: 0;
-  font: 500 1rem/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font: 500 1rem/1.5 "Inter", sans-serif;
   color: var(--body-color);
   text-align: left;
   -webkit-text-size-adjust: 100%;
@@ -121,7 +119,7 @@ body {
 hr {
   margin-top: var(--spacer-5);
   margin-bottom: var(--spacer-5);
-  background-color: var(--border-color);
+  background-color: var(--fill-bg);
   border: 0;
 }
 
@@ -178,6 +176,15 @@ dl {
   margin-bottom: 0;
 }
 
+ol,
+ul {
+  padding-left: var(--spacer-4);
+}
+
+blockquote {
+  margin: 0;
+}
+
 a {
   color: var(--headings-color);
   text-decoration: none;
@@ -194,13 +201,35 @@ a:hover {
   color: var(--primary);
 }
 
-a:focus {
-  outline: 0;
-}
-
 a:not([href]),
 a:not([href]):hover {
   color: inherit;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: auto;
+}
+
+pre code {
+  word-break: normal;
+}
+
+code {
+  word-break: break-word;
+}
+
+figure {
+  margin: 0;
 }
 
 img,

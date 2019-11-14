@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.0 (https://grayshift.io)
+* Grayshift v1.1.1 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -70,17 +70,6 @@
   flex-wrap: wrap;
   margin-right: calc(var(--spacer-3) / -1);
   margin-left: calc(var(--spacer-3) / -1);
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
 }
 
 .col,
