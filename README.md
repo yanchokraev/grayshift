@@ -21,6 +21,12 @@ A lightweight front-end component library for developing fast and powerful web i
 │   └── css/
 │       ├── grayshift.css
 │       └── grayshift.min.css
+│       ├── grayshift-reboot.css
+│       └── grayshift-reboot.min.css
+│       ├── grayshift-grid.css
+│       └── grayshift-grid.min.css
+│       ├── grayshift-utilities.css
+│       └── grayshift-utilities.min.css
 └── components/
     ├── navbar/
     │   └── navbar.html
@@ -59,7 +65,7 @@ A lightweight front-end component library for developing fast and powerful web i
     │   ├── dropzone.html
     │   ├── dropzone.css
     │   └── dropzone.min.css
-    └── authentication/
+    └── login/
     │   └── login.html
     └── table/
     │   └── table.html
@@ -91,3 +97,5 @@ A lightweight front-end component library for developing fast and powerful web i
     </tr>
   </tbody>
 </table>
+
+<p>Thanks to Bootstrap for the build process inspiration.</p>
