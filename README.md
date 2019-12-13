@@ -59,6 +59,8 @@ A lightweight front-end component library for developing fast and powerful web i
     │   └── checkout.html
     └── testimonials/
     │   └── testimonials.html
+    └── team/
+    │   └── team.html
     └── contacts/
     │   └── contacts.html
     └── dropzone/
