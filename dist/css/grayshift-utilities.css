@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.1 (https://grayshift.io)
+* Grayshift v1.1.2 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -65,7 +65,7 @@
   --warning-hover: hsl(45,100%,43%);
   --danger-hover: hsl(354,70%,46%);
   --light-hover: var(--light-800);
-  --dark-hover: var(--dark-300);
+  --dark-hover: var(--dark-200);
   --neutral-hover: var(--light-800);
   --body-color: hsl(263,6%,68%);
   --headings-color: var(--black);
@@ -83,7 +83,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --neutral: var(--dark-100);
-    --neutral-hover: var(--dark-300);
+    --neutral-hover: var(--dark-200);
     --body-color: hsla(0,0%,100%,.45);
     --headings-color: var(--white);
     --tab-link-color: var(--white);
@@ -5954,6 +5954,16 @@
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-smooth {
+    scroll-behavior: auto !important;
+  }
 }
 
 .text-small {

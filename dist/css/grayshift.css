@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.1 (https://grayshift.io)
+* Grayshift v1.1.2 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -65,7 +65,7 @@
   --warning-hover: hsl(45,100%,43%);
   --danger-hover: hsl(354,70%,46%);
   --light-hover: var(--light-800);
-  --dark-hover: var(--dark-300);
+  --dark-hover: var(--dark-200);
   --neutral-hover: var(--light-800);
   --body-color: hsl(263,6%,68%);
   --headings-color: var(--black);
@@ -83,7 +83,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --neutral: var(--dark-100);
-    --neutral-hover: var(--dark-300);
+    --neutral-hover: var(--dark-200);
     --body-color: hsla(0,0%,100%,.45);
     --headings-color: var(--white);
     --tab-link-color: var(--white);
@@ -769,8 +769,7 @@ textarea {
   opacity: 1;
 }
 
-.form-control:disabled,
-.form-control[readonly] {
+.form-control:disabled {
   opacity: .5;
 }
 
@@ -1244,7 +1243,7 @@ fieldset:disabled a.btn {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   display: none;
   min-width: 12rem;
   padding: .75rem;
@@ -1670,7 +1669,7 @@ fieldset:disabled a.btn {
   padding-left: var(--spacer-3);
 }
 
-.breadcrumb-item + .breadcrumb-item:before {
+.breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: var(--spacer-3);
   color: var(--body-color);
@@ -2320,6 +2319,45 @@ fieldset:disabled a.btn {
   color: var(--primary);
 }
 
+.embed-responsive {
+  position: relative;
+  width: 100%;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
 .fixed-top {
   position: fixed !important;
   top: 0;
@@ -2352,7 +2390,7 @@ fieldset:disabled a.btn {
     }
   }
   @media (min-width: 768px) {
-    .sticky-sm-top {
+    .sticky-md-top {
       position: -webkit-sticky !important;
       position: sticky !important;
       top: 0;
@@ -2360,7 +2398,7 @@ fieldset:disabled a.btn {
     }
   }
   @media (min-width: 992px) {
-    .sticky-sm-top {
+    .sticky-lg-top {
       position: -webkit-sticky !important;
       position: sticky !important;
       top: 0;
@@ -2368,7 +2406,7 @@ fieldset:disabled a.btn {
     }
   }
   @media (min-width: 1200px) {
-    .sticky-sm-top {
+    .sticky-xl-top {
       position: -webkit-sticky !important;
       position: sticky !important;
       top: 0;
@@ -8262,6 +8300,16 @@ fieldset:disabled a.btn {
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-smooth {
+    scroll-behavior: auto !important;
+  }
 }
 
 .text-small {

@@ -20,7 +20,7 @@
   background-color: var(--fill-bg);
 }
 
-.toggle[aria-expanded="false"]:after {
+.toggle[aria-expanded="false"]::after {
   content: "Show all responses";
 }
 
@@ -28,6 +28,6 @@
   background-color: var(--fill-bg);
 }
 
-.toggle[aria-expanded="true"]:after {
+.toggle[aria-expanded="true"]::after {
   content: "Hide all responses";
 }
