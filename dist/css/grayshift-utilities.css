@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.1.2 (https://grayshift.io)
+* Grayshift v1.2.0 (https://grayshift.io)
 * © Copyright 2019 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -17,38 +17,38 @@
   --spacer-3: 1rem;
   --spacer-2: .5rem;
   --spacer-1: .25rem;
-  --blue: hsl(211,100%,58%);
-  --indigo: hsl(263,90%,51%);
-  --purple: hsl(261,51%,51%);
-  --pink: hsl(332,79%,58%);
-  --red: hsl(354,70%,54%);
-  --orange: hsl(27,98%,54%);
-  --yellow: hsl(45,100%,51%);
-  --green: hsl(134,61%,45%);
-  --teal: hsl(162,73%,46%);
-  --cyan: hsl(188,78%,45%);
-  --white: hsl(0,0%,100%);
-  --gray: hsl(208,7%,46%);
-  --black: hsl(210,11%,15%);
-  --muted: hsla(0,0%,100%,.75);
-  --light-100: hsl(0,0%,98%);
-  --light-200: hsl(0,0%,96%);
-  --light-300: hsl(0,0%,94%);
-  --light-400: hsl(0,0%,92%);
-  --light-500: hsl(0,0%,90%);
-  --light-600: hsl(0,0%,88%);
-  --light-700: hsl(0,0%,86%);
-  --light-800: hsl(0,0%,84%);
-  --light-900: hsl(0,0%,82%);
-  --dark-100: hsl(0,0%,40%);
-  --dark-200: hsl(0,0%,38%);
-  --dark-300: hsl(0,0%,36%);
-  --dark-400: hsl(0,0%,34%);
-  --dark-500: hsl(0,0%,32%);
-  --dark-600: hsl(0,0%,30%);
-  --dark-700: hsl(0,0%,28%);
-  --dark-800: hsl(0,0%,26%);
-  --dark-900: hsl(0,0%,24%);
+  --blue: hsl(211, 100%, 58%);
+  --indigo: hsl(263, 90%, 51%);
+  --purple: hsl(261, 51%, 51%);
+  --pink: hsl(332, 79%, 58%);
+  --red: hsl(354, 70%, 54%);
+  --orange: hsl(27, 98%, 54%);
+  --yellow: hsl(45, 100%, 51%);
+  --green: hsl(134, 61%, 45%);
+  --teal: hsl(162, 73%, 46%);
+  --cyan: hsl(188, 78%, 45%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(208, 7%, 46%);
+  --black: hsl(210, 11%, 15%);
+  --muted: hsla(0, 0%, 100%, .75);
+  --light-100: hsl(0, 0%, 98%);
+  --light-200: hsl(0, 0%, 96%);
+  --light-300: hsl(0, 0%, 94%);
+  --light-400: hsl(0, 0%, 92%);
+  --light-500: hsl(0, 0%, 90%);
+  --light-600: hsl(0, 0%, 88%);
+  --light-700: hsl(0, 0%, 86%);
+  --light-800: hsl(0, 0%, 84%);
+  --light-900: hsl(0, 0%, 82%);
+  --dark-100: hsl(0, 0%, 40%);
+  --dark-200: hsl(0, 0%, 38%);
+  --dark-300: hsl(0, 0%, 36%);
+  --dark-400: hsl(0, 0%, 34%);
+  --dark-500: hsl(0, 0%, 32%);
+  --dark-600: hsl(0, 0%, 30%);
+  --dark-700: hsl(0, 0%, 28%);
+  --dark-800: hsl(0, 0%, 26%);
+  --dark-900: hsl(0, 0%, 24%);
   --primary: var(--blue);
   --secondary: var(--gray);
   --success: var(--green);
@@ -58,16 +58,16 @@
   --light: var(--light-600);
   --dark: var(--dark-100);
   --neutral: var(--light-600);
-  --primary-hover: hsl(211,100%,50%);
-  --secondary-hover: hsl(208,7%,38%);
-  --success-hover: hsl(134,61%,37%);
-  --info-hover: hsl(188,78%,37%);
-  --warning-hover: hsl(45,100%,43%);
-  --danger-hover: hsl(354,70%,46%);
+  --primary-hover: hsl(211, 100%, 50%);
+  --secondary-hover: hsl(208, 7%, 38%);
+  --success-hover: hsl(134, 61%, 37%);
+  --info-hover: hsl(188, 78%, 37%);
+  --warning-hover: hsl(45, 100%, 43%);
+  --danger-hover: hsl(354, 70%, 46%);
   --light-hover: var(--light-800);
   --dark-hover: var(--dark-200);
   --neutral-hover: var(--light-800);
-  --body-color: hsl(263,6%,68%);
+  --body-color: hsl(263, 6%, 68%);
   --headings-color: var(--black);
   --tab-link-color: var(--primary);
   --body-bg: var(--light-300);
@@ -84,14 +84,14 @@
   :root {
     --neutral: var(--dark-100);
     --neutral-hover: var(--dark-200);
-    --body-color: hsla(0,0%,100%,.45);
+    --body-color: hsla(0, 0%, 100%, .45);
     --headings-color: var(--white);
     --tab-link-color: var(--white);
     --body-bg: var(--dark-700);
     --card-bg: var(--dark-500);
     --table-accent-bg: var(--dark-400);
     --fill-bg: var(--dark-300);
-    --fill-active-bg: hsl(0,0%,44%);
+    --fill-active-bg: hsl(0, 0%, 44%);
     --progress-bg: var(--dark-100);
   }
 }
@@ -5966,51 +5966,95 @@
   }
 }
 
-.text-small {
-  font-size: .875rem !important;
+.lead {
+  font-size: 1.125rem !important;
+}
+
+.fs-xxs {
+  font-size: 1rem !important;
+}
+
+.fs-xs {
+  font-size: 1.25rem !important;
+}
+
+.fs-sm {
+  font-size: 1.5rem !important;
+}
+
+.fs-md {
+  font-size: 1.75rem !important;
+}
+
+.fs-lg {
+  font-size: 2rem !important;
+}
+
+.fs-xl {
+  font-size: 2.5rem !important;
+}
+
+.fs-xxl {
+  font-size: 3rem !important;
 }
 
 .font-italic {
   font-style: italic !important;
 }
 
-.fw-lighter {
+.font-weight-thin {
+  font-weight: 100 !important;
+}
+
+.font-weight-extra-light {
+  font-weight: 200 !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-lighter {
   font-weight: lighter !important;
 }
 
-.fw-400 {
+.font-weight-normal {
   font-weight: 400 !important;
 }
 
-.fw-500 {
+.font-weight-medium {
   font-weight: 500 !important;
 }
 
-.fw-600 {
+.font-weight-semi-bold {
   font-weight: 600 !important;
 }
 
-.fw-700 {
+.font-weight-bold {
   font-weight: 700 !important;
 }
 
-.fw-800 {
-  font-weight: 800 !important;
-}
-
-.fw-bolder {
+.font-weight-bolder {
   font-weight: bolder !important;
 }
 
-.lh-100 {
+.font-weight-extra-bold {
+  font-weight: 800 !important;
+}
+
+.font-weight-black {
+  font-weight: 900 !important;
+}
+
+.lh-sm {
   line-height: 1 !important;
 }
 
-.lh-120 {
+.lh-md {
   line-height: 1.2 !important;
 }
 
-.lh-150 {
+.lh-lg {
   line-height: 1.5 !important;
 }
 
@@ -6297,48 +6341,4 @@
 
 .rounded-0 {
   border-radius: 0 !important;
-}
-
-.fill-primary {
-  fill: var(--primary) !important;
-}
-
-.fill-secondary {
-  fill: var(--secondary) !important;
-}
-
-.fill-success {
-  fill: var(--success) !important;
-}
-
-.fill-info {
-  fill: var(--info) !important;
-}
-
-.fill-warning {
-  fill: var(--warning) !important;
-}
-
-.fill-danger {
-  fill: var(--danger) !important;
-}
-
-.fill-light {
-  fill: var(--light) !important;
-}
-
-.fill-dark {
-  fill: var(--dark) !important;
-}
-
-.fill-white {
-  fill: var(--white) !important;
-}
-
-.fill-black {
-  fill: var(--black) !important;
-}
-
-.fill-muted {
-  fill: var(--muted) !important;
 }

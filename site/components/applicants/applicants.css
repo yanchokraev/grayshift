@@ -12,11 +12,8 @@
 }
 
 .play:hover {
-  background: var(--primary);
+  color: var(--white);
+  background-color: var(--primary);
   border: 0;
   box-shadow: none;
-}
-
-.play:hover .eva {
-  fill: var(--white);
 }

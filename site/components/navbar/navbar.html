@@ -11,11 +11,19 @@
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a rel="home" href="#">
-        <i class="eva-xl" data-eva="github" data-eva-animation="pulse"></i>
+      <a class="link-body" rel="home" href="#">
+        <i class="gi-animation-hover">
+          <svg class="gi gi-github-fill gi-animation gi-animation-hover-pulse fs-xxl" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1A10.89 10.89 0 0 0 1 11.77 10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11 2.37 2.37 0 0 0 3.2.89 2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91 3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77 10.89 10.89 0 0 0 12 1"/>
+          </svg>
+        </i>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-        <i class="eva-md" data-eva="menu"></i>
+        <svg class="gi gi-menu fs-lg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="11" width="18" height="2" rx=".95" ry=".95"/>
+          <rect x="3" y="16" width="18" height="2" rx=".95" ry=".95"/>
+          <rect x="3" y="6" width="18" height="2" rx=".95" ry=".95"/>
+        </svg>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -29,7 +37,9 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" id="navbarDropdownOne" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<i class="eva-xs ml-1 align-text-top" data-eva="arrow-down"></i></a>
+            <a class="nav-link" id="navbarDropdownOne" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<svg class="gi gi-arrow-down-fill ml-1 align-text-top" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05 2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17z"/>
+            </svg></a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownOne">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -39,22 +49,20 @@
         <form>
           <div class="input-group mb-5 mr-lg-5 mb-lg-0">
             <div class="input-group-prepend">
-              <i data-eva="search"></i>
+              <svg class="gi gi-search fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"/>
+              </svg>
             </div>
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           </div>
         </form>
         <div>
-          <span class="avatar avatar-md h5 bg-primary rounded-circle">jd</span>
+          <span class="avatar avatar-md lead bg-primary rounded-circle">jd</span>
         </div>
       </div>
     </div>
   </nav>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/eva-icons@1.1.2/eva.min.js" integrity="sha384-evc6xuruZOLSxcDYJOMhN4pnuWv2x1hHaVU9m0os+cvprT9Gg1sgClT+EM4n/ng9" crossorigin="anonymous"></script>
-  <script>
-  eva.replace()
-  </script>
 </body>
 </html>
