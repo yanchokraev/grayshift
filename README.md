@@ -14,6 +14,7 @@ A lightweight front-end component library for developing fast and powerful web i
    ·
   <a href="https://grayshift.io/contacts/">Contacts</a>
 </p>
+<img src="https://cdn.dribbble.com/users/3009008/screenshots/10037313/media/1c52ed9aabf1ab3bad1d6cec3a35d00e.png" alt="Grayshift's Components">
 <h2>What's included</h2>
 <p>Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:</p>
 <pre lang="text"><code>grayshift/
