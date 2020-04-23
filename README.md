@@ -109,5 +109,4 @@ A lightweight front-end component library for developing fast and powerful web i
 
 <ul>
   <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-  <li><a href="https://akveo.github.io/eva-icons/#/">Eva Icons</a></li>
 </ul>
