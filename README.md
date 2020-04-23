@@ -28,10 +28,6 @@ A lightweight front-end component library for developing fast and powerful web i
 │   │   ├── grayshift-grid.min.css
 │   │   ├── grayshift-utilities.css
 │   │   └── grayshift-utilities.min.css
-│   └── icons/
-│   │   ├── outline
-│   │   ├── fill
-│   │   └── other
 └── components/
     ├── navbar/
     │   └── navbar.html
