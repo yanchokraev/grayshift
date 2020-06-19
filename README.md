@@ -28,10 +28,6 @@ A lightweight front-end component library for developing fast and powerful web i
 │   │   ├── grayshift-grid.min.css
 │   │   ├── grayshift-utilities.css
 │   │   └── grayshift-utilities.min.css
-│   └── icons/
-│   │   ├── outline
-│   │   ├── fill
-│   │   └── other
 └── components/
     ├── navbar/
     │   └── navbar.html
@@ -109,5 +105,4 @@ A lightweight front-end component library for developing fast and powerful web i
 
 <ul>
   <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-  <li><a href="https://akveo.github.io/eva-icons/#/">Eva Icons</a></li>
 </ul>
