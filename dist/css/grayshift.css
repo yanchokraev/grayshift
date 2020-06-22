@@ -1,5 +1,5 @@
 /*!
-* Grayshift v2.0.0 (https://grayshift.io)
+* Grayshift v2.0.1 (https://grayshift.io)
 * © Copyright 2019-2020 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -836,7 +836,7 @@ fieldset:disabled .btn {
 
 .btn-primary:active,
 .btn-primary.active,
-.dropdown.show > .btn-primary {
+.btn-primary.show {
   color: var(--white);
   background-color: hsl(216, 98%, 42%);
 }
@@ -860,7 +860,7 @@ fieldset:disabled .btn {
 
 .btn-secondary:active,
 .btn-secondary.active,
-.dropdown.show > .btn-secondary {
+.btn-secondary.show {
   color: var(--white);
   background-color: hsl(210, 8%, 36%);
 }
@@ -884,7 +884,7 @@ fieldset:disabled .btn {
 
 .btn-success:active,
 .btn-success.active,
-.dropdown.show > .btn-success {
+.btn-success.show {
   color: var(--white);
   background-color: hsl(134, 62%, 31%);
 }
@@ -908,7 +908,7 @@ fieldset:disabled .btn {
 
 .btn-info:active,
 .btn-info.active,
-.dropdown.show > .btn-info {
+.btn-info.show {
   color: var(--white);
   background-color: hsl(188, 78%, 31%);
 }
@@ -932,7 +932,7 @@ fieldset:disabled .btn {
 
 .btn-warning:active,
 .btn-warning.active,
-.dropdown.show > .btn-warning {
+.btn-warning.show {
   color: var(--white);
   background-color: hsl(45, 100%, 41%);
 }
@@ -956,7 +956,7 @@ fieldset:disabled .btn {
 
 .btn-danger:active,
 .btn-danger.active,
-.dropdown.show > .btn-danger {
+.btn-danger.show {
   color: var(--white);
   background-color: hsl(354, 70%, 44%);
 }
@@ -980,7 +980,7 @@ fieldset:disabled .btn {
 
 .btn-light:active,
 .btn-light.active,
-.dropdown.show > .btn-light {
+.btn-light.show {
   color: var(--body-color);
   background-color: var(--light-700);
 }
@@ -1004,7 +1004,7 @@ fieldset:disabled .btn {
 
 .btn-dark:active,
 .btn-dark.active,
-.dropdown.show > .btn-dark {
+.btn-dark.show {
   color: var(--white);
   background-color: var(--dark-300);
 }
@@ -1028,7 +1028,7 @@ fieldset:disabled .btn {
 
 .btn-neutral:active,
 .btn-neutral.active,
-.dropdown.show > .btn-neutral {
+.btn-neutral.show {
   color: var(--body-color);
   background-color: var(--neutral-active);
 }
@@ -1257,7 +1257,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-link.show {
   color: var(--link-active-color);
   background-color: var(--fill-hover-bg);
 }
@@ -1268,7 +1268,7 @@ fieldset:disabled .btn {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .nav-link.show {
   color: var(--white);
   background-color: var(--primary);
 }
@@ -1324,8 +1324,8 @@ fieldset:disabled .btn {
   margin-top: var(--spacer-3);
 }
 
-.navbar-nav .active > .nav-link,
-.navbar-nav .show > .nav-link {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--link-active-color);
 }
 
