@@ -1,4 +1,0 @@
-.accordion .card-header[aria-expanded="false"] .gi-arrow-ios-downward,
-.accordion .card-header[aria-expanded="true"] .gi-arrow-ios-forward {
-  display: none;
-}
