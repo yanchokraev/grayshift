@@ -2,6 +2,7 @@ Grayshift is a lightweight front-end component library for developing fast and p
 
 <ul>
   <li><a href="https://grayshift.io/components/">Components</a></li>
+  <li><a href="https://grayshift.io/examples/">Examples</a></li>
   <li><a href="https://grayshift.io/icons/">Icons</a></li>
 </ul>
 
