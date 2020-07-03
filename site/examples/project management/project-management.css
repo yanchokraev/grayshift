@@ -166,14 +166,6 @@
   border-radius: .5rem;
 }
 
-.avatar {
-  display: inline-flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
 .invisible-scrollbar {
   overflow-x: hidden;
   overflow-y: auto;

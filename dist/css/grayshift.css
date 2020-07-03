@@ -55,10 +55,10 @@
   --warning: var(--yellow);
   --danger: var(--red);
   --light: var(--light-500);
-  --dark: var(--dark-100);
+  --dark: var(--dark-200);
   --neutral: var(--light-500);
-  --neutral-hover: var(--light-600);
-  --neutral-active: var(--light-700);
+  --neutral-hover: hsl(0, 0%, 89%);
+  --neutral-active: var(--light-600);
   --body-color: hsl(264, 8%, 60%);
   --headings-color: var(--black);
   --link-color: var(--black);
@@ -721,43 +721,43 @@ textarea {
 .input-group {
   position: relative;
   display: flex;
+  align-items: stretch;
+  width: 100%;
 }
 
-.input-group .form-control {
+.input-group > .form-control {
   position: relative;
-  flex: 1 1 0%;
+  flex: 1 1 auto;
+  width: 1%;
   min-width: 0;
 }
 
-.input-group .form-control:not(:last-child) {
+.input-group > .form-control:not(:last-child) {
   padding-right: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
-.input-group .form-control:not(:first-child) {
+.input-group > .form-control:not(:first-child) {
   padding-left: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
-.input-group-prepend,
-.input-group-append {
+.input-group-item {
   display: flex;
   align-items: center;
   padding-right: var(--spacer-3);
   padding-left: var(--spacer-3);
   background-color: var(--fill-bg);
+  border-radius: .5rem;
 }
 
-.input-group-prepend {
-  border-top-left-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+.input-group > :not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.input-group-append {
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+.input-group > :not(:first-child) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .btn {
@@ -953,14 +953,14 @@ fieldset:disabled .btn {
 .btn-light:hover,
 .btn-light:focus {
   color: var(--body-color);
-  background-color: var(--light-600);
+  background-color: hsl(0, 0%, 89%);
 }
 
 .btn-light:active,
 .btn-light.active,
 .btn-light.show {
   color: var(--body-color);
-  background-color: var(--light-700);
+  background-color: var(--light-600);
 }
 
 .btn-light:disabled,
@@ -977,7 +977,7 @@ fieldset:disabled .btn {
 .btn-dark:hover,
 .btn-dark:focus {
   color: var(--white);
-  background-color: var(--dark-200);
+  background-color: hsl(240, 8%, 29%);
 }
 
 .btn-dark:active,
