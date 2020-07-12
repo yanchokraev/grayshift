@@ -762,7 +762,7 @@ textarea {
 
 .btn {
   display: inline-block;
-  padding: 0;
+  padding: .75rem var(--spacer-4);
   text-align: center;
   vertical-align: middle;
   -moz-user-select: none;
@@ -794,7 +794,7 @@ fieldset:disabled .btn {
 }
 
 .btn-sm {
-  padding: .75rem var(--spacer-5);
+  padding: var(--spacer-2) var(--spacer-3);
 }
 
 .btn-lg {
@@ -1225,7 +1225,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link {
-  padding: .5rem;
+  padding: var(--spacer-2);
   border-radius: .5rem;
   transition-property: color, background-color;
 }
@@ -1441,15 +1441,6 @@ fieldset:disabled .btn {
   background-color: var(--card-bg);
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
-}
-
-.badge {
-  display: inline-block;
-  padding: var(--spacer-1) var(--spacer-2);
-  font-size: .75rem;
-  text-align: center;
-  white-space: nowrap;
-  border-radius: .25rem;
 }
 
 .modal-open {
