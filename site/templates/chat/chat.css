@@ -35,7 +35,7 @@
 
 .navside-nav .nav-link.active,
 .navside-nav .nav-link.show {
-  color: var(--link-active-color);
+  color: var(--link-color);
 }
 
 @media (min-width: 576px) {

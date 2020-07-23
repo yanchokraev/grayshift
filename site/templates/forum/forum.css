@@ -7,7 +7,6 @@
   --headings-color: var(--white);
   --link-color: var(--white);
   --link-hover-color: hsl(0, 0%, 88%);
-  --link-active-color: var(--white);
   --body-bg: var(--dark-700);
   --card-bg: var(--dark-500);
   --fill-bg: var(--dark-200);
@@ -45,13 +44,37 @@
   }
 }
 
-.blockquote {
+.callout {
   padding: var(--spacer-5);
   margin: 0;
-  background-color: var(--dark-300);
-  border-left: 4px solid var(--primary);
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  background-color: var(--fill-bg);
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-radius: .5rem;
+}
+
+.callout-primary {
+  border-left-color: var(--primary);
+}
+
+.callout-secondary {
+  border-left-color: var(--secondary);
+}
+
+.callout-success {
+  border-left-color: var(--success);
+}
+
+.callout-info {
+  border-left-color: var(--info);
+}
+
+.callout-warning {
+  border-left-color: var(--warning);
+}
+
+.callout-danger {
+  border-left-color: var(--danger);
 }
 
 .text-truncate {

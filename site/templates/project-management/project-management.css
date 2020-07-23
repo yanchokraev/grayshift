@@ -40,13 +40,12 @@
 
 .navside-nav .nav-link.active,
 .navside-nav .nav-link.show {
-  color: var(--link-active-color);
+  color: var(--link-color);
 }
 
 .navside-nav .dropdown-menu {
-  position: static !important;
+  position: static;
   margin-top: var(--spacer-3);
-  transform: none !important;
 }
 
 .navside-collapse {

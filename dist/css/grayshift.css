@@ -1,5 +1,5 @@
 /*!
-* Grayshift v2.1.0 (https://grayshift.io)
+* Grayshift v2.2.0 (https://grayshift.io)
 * © Copyright 2019-2020 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -61,9 +61,8 @@
   --neutral-active: var(--light-600);
   --body-color: hsl(264, 8%, 60%);
   --headings-color: var(--black);
-  --link-color: var(--black);
-  --link-hover-color: var(--primary);
-  --link-active-color: var(--primary);
+  --link-color: var(--primary);
+  --link-hover-color: hsl(216, 98%, 45%);
   --body-bg: var(--light-200);
   --card-bg: var(--white);
   --fill-bg: var(--light-500);
@@ -80,7 +79,6 @@
     --headings-color: var(--white);
     --link-color: var(--white);
     --link-hover-color: hsl(0, 0%, 88%);
-    --link-active-color: var(--white);
     --body-bg: var(--dark-700);
     --card-bg: var(--dark-500);
     --fill-bg: var(--dark-200);
@@ -201,9 +199,6 @@ svg {
 
 label {
   display: inline-block;
-  margin-bottom: var(--spacer-3);
-  font-weight: 600;
-  color: var(--headings-color);
 }
 
 input,
@@ -642,6 +637,12 @@ textarea {
   padding: var(--spacer-3);
 }
 
+.form-label {
+  margin-bottom: var(--spacer-3);
+  font-weight: 600;
+  color: var(--headings-color);
+}
+
 .form-check {
   display: block;
   min-height: 1em;
@@ -649,6 +650,12 @@ textarea {
 
 .form-check .form-check-input {
   float: left;
+}
+
+.form-check .form-check-input:not(:only-child) {
+  margin-top: var(--spacer-1);
+  margin-right: var(--spacer-3);
+  margin-bottom: var(--spacer-1);
 }
 
 .form-check-input {
@@ -691,8 +698,15 @@ textarea {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 
-.form-check-input[disabled] {
+.form-check-input:disabled {
   pointer-events: none;
+  -webkit-filter: none;
+  filter: none;
+  opacity: .5;
+}
+
+.form-check-input[disabled] ~ .form-check-label,
+.form-check-input:disabled ~ .form-check-label {
   opacity: .5;
 }
 
@@ -898,26 +912,26 @@ fieldset:disabled .btn {
 }
 
 .btn-warning {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--warning);
 }
 
 .btn-warning:hover,
 .btn-warning:focus {
-  color: var(--white);
+  color: var(--black);
   background-color: hsl(45, 100%, 44%);
 }
 
 .btn-warning:active,
 .btn-warning.active,
 .btn-warning.show {
-  color: var(--white);
+  color: var(--black);
   background-color: hsl(45, 100%, 41%);
 }
 
 .btn-warning:disabled,
 .btn-warning.disabled {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--warning);
 }
 
@@ -1230,13 +1244,9 @@ fieldset:disabled .btn {
   transition-property: color, background-color;
 }
 
-.nav-tabs .nav-link:hover {
-  color: inherit;
-}
-
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link.show {
-  color: var(--link-active-color);
+  color: var(--link-color);
   background-color: var(--fill-hover-bg);
 }
 
@@ -1251,11 +1261,13 @@ fieldset:disabled .btn {
   background-color: var(--primary);
 }
 
+.nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
 }
 
+.nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -1304,7 +1316,7 @@ fieldset:disabled .btn {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--link-active-color);
+  color: var(--link-color);
 }
 
 .navbar-nav .dropdown-menu {
@@ -1597,6 +1609,12 @@ fieldset:disabled .btn {
   }
 }
 
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 .link-primary {
   color: var(--primary);
 }
@@ -1666,6 +1684,14 @@ fieldset:disabled .btn {
 }
 
 .link-body:hover {
+  color: var(--link-hover-color);
+}
+
+.link-headings {
+  color: var(--headings-color);
+}
+
+.link-headings:hover {
   color: var(--link-hover-color);
 }
 
@@ -6164,10 +6190,6 @@ fieldset:disabled .btn {
   color: inherit !important;
 }
 
-.text-justify {
-  text-align: justify !important;
-}
-
 .text-left {
   text-align: left !important;
 }
@@ -6242,6 +6264,14 @@ fieldset:disabled .btn {
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
 }
 
 .text-break {
