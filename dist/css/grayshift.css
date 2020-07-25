@@ -1306,7 +1306,7 @@ fieldset:disabled .btn {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin: var(--spacer-5) 0;
+  margin-top: var(--spacer-5);
   list-style: none;
 }
 
@@ -1345,7 +1345,7 @@ fieldset:disabled .btn {
   }
   .navbar-expand-sm .navbar-nav {
     flex-direction: row;
-    margin: 0 var(--spacer-5);
+    margin-top: 0;
   }
   .navbar-expand-sm .navbar-nav .nav-item + .nav-item {
     margin-top: 0;
@@ -1372,7 +1372,7 @@ fieldset:disabled .btn {
   }
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
-    margin: 0 var(--spacer-5);
+    margin-top: 0;
   }
   .navbar-expand-md .navbar-nav .nav-item + .nav-item {
     margin-top: 0;
@@ -1399,7 +1399,7 @@ fieldset:disabled .btn {
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
-    margin: 0 var(--spacer-5);
+    margin-top: 0;
   }
   .navbar-expand-lg .navbar-nav .nav-item + .nav-item {
     margin-top: 0;
@@ -1426,7 +1426,7 @@ fieldset:disabled .btn {
   }
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
-    margin: 0 var(--spacer-5);
+    margin-top: 0;
   }
   .navbar-expand-xl .navbar-nav .nav-item + .nav-item {
     margin-top: 0;
