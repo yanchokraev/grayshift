@@ -1,8 +1,8 @@
 :root {
   --dark: var(--dark-100);
-  --neutral: var(--dark-100);
-  --neutral-hover: hsl(240, 8%, 31%);
-  --neutral-active: var(--dark-200);
+  --auto: var(--dark-100);
+  --auto-hover: hsl(240, 8%, 31%);
+  --auto-active: var(--dark-200);
   --body-color: hsl(240, 8%, 60%);
   --headings-color: var(--white);
   --link-color: var(--white);
