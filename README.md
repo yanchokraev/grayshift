@@ -1,3 +1,5 @@
+<img src="https://grayshift.io/dist/svg/favicon.svg" width="80" height="80" alt="Grayshift's logo">
+
 Grayshift is a lightweight front-end component library for developing fast and powerful web interfaces.
 
 <ul>
