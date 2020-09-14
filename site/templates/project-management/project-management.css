@@ -1,5 +1,5 @@
 :root {
-  --progress-bg: var(--light-600);
+  --progress-bg: var(--light-500);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -166,8 +166,7 @@
 }
 
 .invisible-scrollbar {
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: auto;
   scrollbar-width: none;
 }
 

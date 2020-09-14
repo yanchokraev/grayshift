@@ -1,15 +1,39 @@
 :root {
+  --light: var(--light-500);
+  --auto: var(--light-500);
+  --auto-hover: hsl(0, 0%, 89%);
+  --auto-active: var(--light-600);
+  --body-bg: var(--light-200);
+  --fill-bg: var(--light-500);
   --nav-bg: var(--white);
   --sidebar-bg: var(--light-100);
   --chat-bg: var(--light-200);
+  --box-shadow: 0 0 1rem .5rem hsla(0, 0%, 0%, .02);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --auto: var(--dark-200);
+    --auto-hover: hsl(240, 8%, 29%);
+    --auto-active: var(--dark-300);
+    --body-bg: var(--dark-700);
+    --fill-bg: var(--dark-200);
     --nav-bg: var(--dark-600);
     --sidebar-bg: var(--dark-500);
     --chat-bg: var(--dark-400);
+    --box-shadow: none;
   }
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: hsl(0, 0%, 89%);
+}
+
+.btn-light:active,
+.btn-light.active,
+.btn-light.show {
+  background-color: var(--light-600);
 }
 
 .navside {
@@ -164,9 +188,12 @@
   }
 }
 
+.link-light:hover {
+  color: var(--light-600);
+}
+
 .invisible-scrollbar {
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: auto;
   scrollbar-width: none;
 }
 

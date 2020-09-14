@@ -1,16 +1,16 @@
 /*!
-* Grayshift v2.2.1 (https://grayshift.io)
+* Grayshift v2.2.2 (https://grayshift.io)
 * © Copyright 2019-2020 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
 
 :root {
-  --spacer-6: 5rem;
-  --spacer-5: 2rem;
-  --spacer-4: 1.5rem;
-  --spacer-3: 1rem;
-  --spacer-2: .5rem;
   --spacer-1: .25rem;
+  --spacer-2: .5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --spacer-6: 5rem;
   --blue: hsl(216, 98%, 52%);
   --indigo: hsl(263, 90%, 51%);
   --purple: hsl(261, 51%, 51%);
@@ -18,9 +18,9 @@
   --red: hsl(354, 70%, 54%);
   --orange: hsl(27, 98%, 54%);
   --yellow: hsl(45, 100%, 51%);
-  --green: hsl(134, 61%, 41%);
+  --green: hsl(152, 69%, 31%);
   --teal: hsl(162, 73%, 46%);
-  --cyan: hsl(188, 78%, 41%);
+  --cyan: hsl(190, 90%, 50%);
   --white: hsl(0, 0%, 100%);
   --gray: hsl(208, 7%, 46%);
   --black: hsl(210, 11%, 15%);
@@ -48,20 +48,20 @@
   --info: var(--cyan);
   --warning: var(--yellow);
   --danger: var(--red);
-  --light: var(--light-500);
+  --light: var(--light-400);
   --dark: var(--dark-200);
-  --auto: var(--light-500);
-  --auto-hover: hsl(0, 0%, 89%);
-  --auto-active: var(--light-600);
+  --auto: var(--light-400);
+  --auto-hover: hsl(0, 0%, 91%);
+  --auto-active: var(--light-500);
   --body-color: hsl(264, 8%, 60%);
   --headings-color: var(--black);
   --link-color: var(--primary);
   --link-hover-color: hsl(216, 98%, 45%);
-  --body-bg: var(--light-200);
+  --body-bg: var(--light-100);
   --card-bg: var(--white);
-  --fill-bg: var(--light-500);
+  --fill-bg: var(--light-400);
   --fill-hover-bg: var(--white);
-  --box-shadow: 0 0 1rem .5rem hsla(0, 0%, 0%, .02);
+  --box-shadow: 0 0 1rem .5rem hsla(0, 0%, 0%, .04);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -101,8 +101,7 @@ body {
 }
 
 hr {
-  margin-top: var(--spacer-5);
-  margin-bottom: var(--spacer-5);
+  margin: var(--spacer-5) 0;
   background-color: var(--fill-bg);
   border: 0;
 }
@@ -165,6 +164,15 @@ ul {
   padding-left: var(--spacer-4);
 }
 
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: .875rem;
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -181,8 +189,8 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-a:not([href]),
-a:not([href]):hover {
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
   color: inherit;
 }
 
@@ -249,6 +257,10 @@ textarea {
   -webkit-appearance: button;
 }
 
+iframe {
+  border: 0;
+}
+
 .container,
 .container-fluid {
   width: 100%;
@@ -284,14 +296,12 @@ textarea {
 
 .row {
   display: flex;
-  flex: 1 0 100%;
   flex-wrap: wrap;
   margin-right: calc(var(--spacer-3) / -1);
   margin-left: calc(var(--spacer-3) / -1);
 }
 
-.col,
-[class*="col-"] {
+.row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -675,7 +685,6 @@ textarea {
 }
 
 .form-check-input:active {
-  -webkit-filter: brightness(90%);
   filter: brightness(90%);
 }
 
@@ -694,7 +703,6 @@ textarea {
 
 .form-check-input:disabled {
   pointer-events: none;
-  -webkit-filter: none;
   filter: none;
   opacity: .5;
 }
@@ -865,14 +873,14 @@ fieldset:disabled .btn {
 .btn-success:hover,
 .btn-success:focus {
   color: var(--white);
-  background-color: hsl(133, 61%, 33%);
+  background-color: hsl(152, 69%, 24%);
 }
 
 .btn-success:active,
 .btn-success.active,
 .btn-success.show {
   color: var(--white);
-  background-color: hsl(134, 62%, 31%);
+  background-color: hsl(152, 69%, 21%);
 }
 
 .btn-success:disabled,
@@ -882,26 +890,26 @@ fieldset:disabled .btn {
 }
 
 .btn-info {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--info);
 }
 
 .btn-info:hover,
 .btn-info:focus {
-  color: var(--white);
-  background-color: hsl(188, 78%, 33%);
+  color: var(--black);
+  background-color: hsl(190, 90%, 57%);
 }
 
 .btn-info:active,
 .btn-info.active,
 .btn-info.show {
-  color: var(--white);
-  background-color: hsl(188, 78%, 31%);
+  color: var(--black);
+  background-color: hsl(190, 89%, 60%);
 }
 
 .btn-info:disabled,
 .btn-info.disabled {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--info);
 }
 
@@ -961,14 +969,14 @@ fieldset:disabled .btn {
 .btn-light:hover,
 .btn-light:focus {
   color: var(--body-color);
-  background-color: hsl(0, 0%, 89%);
+  background-color: hsl(0, 0%, 91%);
 }
 
 .btn-light:active,
 .btn-light.active,
 .btn-light.show {
   color: var(--body-color);
-  background-color: var(--light-600);
+  background-color: var(--light-500);
 }
 
 .btn-light:disabled,
@@ -1224,10 +1232,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs {
-  display: flex;
-  width: 100%;
   padding: var(--spacer-2);
-  list-style: none;
   background-color: var(--fill-bg);
   border-radius: .5rem;
 }
@@ -1630,7 +1635,7 @@ fieldset:disabled .btn {
 }
 
 .link-success:hover {
-  color: hsl(133, 61%, 33%);
+  color: hsl(152, 69%, 24%);
 }
 
 .link-info {
@@ -1638,7 +1643,7 @@ fieldset:disabled .btn {
 }
 
 .link-info:hover {
-  color: hsl(188, 78%, 33%);
+  color: hsl(190, 90%, 57%);
 }
 
 .link-warning {
@@ -1662,7 +1667,7 @@ fieldset:disabled .btn {
 }
 
 .link-light:hover {
-  color: var(--light-600);
+  color: var(--light-500);
 }
 
 .link-dark {
@@ -4585,87 +4590,95 @@ fieldset:disabled .btn {
   overflow: hidden !important;
 }
 
-.fs-xs {
+.fs-1 {
   font-size: 1rem !important;
 }
 
-.fs-sm {
+.fs-2 {
   font-size: 1.25rem !important;
 }
 
-.fs-md {
+.fs-3 {
   font-size: 1.5rem !important;
 }
 
-.fs-lg {
+.fs-4 {
   font-size: 1.75rem !important;
 }
 
-.fs-xl {
+.fs-5 {
   font-size: 2rem !important;
+}
+
+.fs-6 {
+  font-size: 2.5rem !important;
+}
+
+.font-normal {
+  font-style: normal !important;
 }
 
 .font-italic {
   font-style: italic !important;
 }
 
-.font-weight-thin {
+.fw-thin {
   font-weight: 100 !important;
 }
 
-.font-weight-extra-light {
+.fw-extra-light {
   font-weight: 200 !important;
 }
 
-.font-weight-light {
+.fw-light {
   font-weight: 300 !important;
 }
 
-.font-weight-lighter {
+.fw-lighter {
   font-weight: lighter !important;
 }
 
-.font-weight-normal {
+.fw-normal {
   font-weight: 400 !important;
 }
 
-.font-weight-medium {
+.fw-medium {
   font-weight: 500 !important;
 }
 
-.font-weight-semi-bold {
+.fw-semi-bold {
   font-weight: 600 !important;
 }
 
-.font-weight-bold {
+.fw-bold {
   font-weight: 700 !important;
 }
 
-.font-weight-bolder {
+.fw-bolder {
   font-weight: bolder !important;
 }
 
-.font-weight-extra-bold {
+.fw-extra-bold {
   font-weight: 800 !important;
 }
 
-.font-weight-black {
+.fw-black {
   font-weight: 900 !important;
 }
 
-.lh-sm {
+.lh-tight {
   line-height: 1 !important;
 }
 
-.lh-md {
+.lh-snug {
   line-height: 1.25 !important;
 }
 
-.lh-lg {
+.lh-relaxed {
   line-height: 1.5 !important;
 }
 
-.lh-xl {
+.lh-loose {
   line-height: 2 !important;
 }
 
