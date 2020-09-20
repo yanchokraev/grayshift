@@ -25,6 +25,16 @@
 <img src="https://cdn.dribbble.com/users/3009008/screenshots/12131107/media/31e0caaca67af8622110ced6e09e9849.jpg" alt="grayshift dark">
 
 
+## Table of contents
+
+- [Quick start](#quick-start)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
+- [Community](#community)
+- [Versioning](#versioning)
+- [Copyright and license](#copyright-and-license)
+
+
 ## Quick Start
 
 Several quick start options are available:
