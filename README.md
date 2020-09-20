@@ -32,7 +32,7 @@
 - [Documentation](#documentation)
 - [Community](#community)
 - [Versioning](#versioning)
-- [Copyright and license](#copyright-and-license)
+- [License](#license)
 
 
 ## Quick Start
