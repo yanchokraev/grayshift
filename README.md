@@ -36,15 +36,15 @@
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/gskit/gskit/archive/v2.2.2.zip)
-- Clone the repo: `git clone https://github.com/gskit/gskit.git`
+- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v2.2.2.zip)
+- Clone the repo: `git clone https://github.com/yanchokraev/grayshift.git`
 
 Read the [Getting started page](https://grayshift.io/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/gskit/gskit/issues/new).
+Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/yanchokraev/grayshift/issues/new).
 
 
 ## Documentation
@@ -64,9 +64,9 @@ Get updates on Grayshift's development and chat with the project maintainers and
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Grayshift is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
 
-See [the Releases section of our GitHub project](https://github.com/gskit/gskit/releases) for changelogs for each release version of Grayshift.
+See [the Releases section of our GitHub project](https://github.com/yanchokraev/grayshift/releases) for changelogs for each release version of Grayshift.
 
 
 ## License
 
-Code released under the [MIT License](https://github.com/gskit/gskit/blob/master/LICENSE).
+Code released under the [MIT License](https://github.com/yanchokraev/grayshift/blob/master/LICENSE).
