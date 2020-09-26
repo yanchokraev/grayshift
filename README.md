@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://grayshift.io">
-    <img src="https://grayshift.io/dist/svg/favicon.svg" width="80" height="80" alt="Grayshift's logo">
+    <img src="https://grayshift.io/svg/favicon.svg" width="80" height="80" alt="Grayshift's logo">
   </a>
 </p>
 
@@ -12,7 +12,7 @@
   <a href="https://grayshift.io/docs/getting-started/introduction/"><strong>Explore Grayshift docs »</strong></a>
   <br>
   <br>
-  <a href="https://grayshift.io/examples/">Examples</a>
+  <a href="https://grayshift.io/blocks/">Blocks</a>
   ·
   <a href="https://grayshift.io/templates">Templates</a>
   ·
@@ -36,7 +36,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v2.2.2.zip)
+- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v1.0.0.zip)
 - Clone the repo: `git clone https://github.com/yanchokraev/grayshift.git`
 
 Read the [Getting started page](https://grayshift.io/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
