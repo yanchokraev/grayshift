@@ -5026,5 +5026,5 @@ fieldset:disabled .btn {
 }
 
 .translate-middle {
-  transform: translateX(-50%) translateY(-50%) !important;
+  transform: translateX(50%) translateY(50%) !important;
 }
