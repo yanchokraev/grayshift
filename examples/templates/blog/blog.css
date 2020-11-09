@@ -1,9 +1,0 @@
-body {
-  font-family: "bagatela", serif;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
-}

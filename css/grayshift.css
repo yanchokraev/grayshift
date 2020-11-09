@@ -61,6 +61,7 @@
   --card-bg: var(--white);
   --fill-bg: var(--light-400);
   --fill-hover-bg: var(--white);
+  --form-check-input-bg: var(--light-700);
   --box-shadow: 0 0 1rem .5rem hsla(0, 0%, 0%, .04);
 }
 
@@ -77,6 +78,7 @@
     --card-bg: var(--dark-500);
     --fill-bg: var(--dark-200);
     --fill-hover-bg: hsl(240, 8%, 36%);
+    --form-check-input-bg: hsl(240, 8%, 38%);
     --box-shadow: none;
   }
 }
@@ -665,7 +667,7 @@ iframe {
 .form-check-input {
   width: 1em;
   height: 1em;
-  background-color: var(--fill-bg);
+  background-color: var(--form-check-input-bg);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid transparent;
@@ -1495,6 +1497,19 @@ fieldset:disabled .btn {
   transform: none;
 }
 
+.modal-dialog-scrollable {
+  height: calc(100% - 1rem);
+}
+
+.modal-dialog-scrollable .modal-content {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
 .modal-dialog-centered {
   display: flex;
   align-items: center;
@@ -1567,6 +1582,9 @@ fieldset:disabled .btn {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
+  }
+  .modal-dialog-scrollable {
+    height: calc(100% - 3.5rem);
   }
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem);
