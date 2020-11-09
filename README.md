@@ -12,7 +12,7 @@
   <a href="https://grayshift.io/docs/getting-started/introduction/"><strong>Explore Grayshift docs »</strong></a>
   <br>
   <br>
-  <a href="https://grayshift.io/Examples/">Examples</a>
+  <a href="https://grayshift.io/examples/">Examples</a>
   ·
   <a href="https://grayshift.io/icons">Icons</a>
 </p>
