@@ -1528,7 +1528,7 @@ iframe {
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem);
   }
-  .sm\:modal {
+  .modal-sm {
     max-width: 300px;
   }
   .modal-header,
@@ -1539,14 +1539,14 @@ iframe {
 }
 
 @media (min-width: 992px) {
-  .lg\:modal,
-.xl\:modal {
+  .modal-lg,
+.modal-xl {
     max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
-  .xl\:modal {
+  .modal-xl {
     max-width: 1140px;
   }
 }
