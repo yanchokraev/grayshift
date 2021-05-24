@@ -1,0 +1,508 @@
+// Variables
+
+// Color system
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$white: #fff !default;
+$gray: #6c757d !default;
+$black: #000 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start light-color-variables
+$light-100: darken($white, 2%) !default;
+$light-200: darken($white, 4%) !default;
+$light-300: darken($white, 6%) !default;
+$light-400: darken($white, 8%) !default;
+$light-500: darken($white, 10%) !default;
+$light-600: darken($white, 12%) !default;
+$light-700: darken($white, 14%) !default;
+$light-800: darken($white, 16%) !default;
+$light-900: darken($white, 18%) !default;
+// scss-docs-end light-color-variables
+
+// scss-docs-start dark-color-variables
+$dark-100: adjust-color($black, $hue: 240, $saturation: 8%, $lightness: 32%) !default;
+$dark-200: darken($dark-100, 2%) !default;
+$dark-300: darken($dark-100, 4%) !default;
+$dark-400: darken($dark-100, 6%) !default;
+$dark-500: darken($dark-100, 8%) !default;
+$dark-600: darken($dark-100, 10%) !default;
+$dark-700: darken($dark-100, 12%) !default;
+$dark-800: darken($dark-100, 14%) !default;
+$dark-900: darken($dark-100, 16%) !default;
+// scss-docs-end dark-color-variables
+
+// scss-docs-start theme-color-variables
+$primary: var(--blue) !default;
+$secondary: var(--gray) !default;
+$success: var(--green) !default;
+$info: var(--cyan) !default;
+$warning: var(--yellow) !default;
+$danger: var(--red) !default;
+
+$light: var(--light-400) !default;
+$light-hover: #e8e8e8 !default;
+$light-active: var(--light-500) !default;
+
+$dark: var(--dark-200) !default;
+$dark-hover: #444450 !default;
+$dark-active: var(--dark-300) !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start lightmode-variables
+$lightmode: (
+  "auto": var(--light),
+  "auto-hover": $light-hover,
+  "auto-active": $light-active,
+  "body-color": #9791a1,
+  "headings-color": #212529,
+  "link-color": var(--primary),
+  "link-hover-color": #0b5ed7,
+  "fill-hover-color": var(--body-color),
+  "body-bg": var(--light-100),
+  "card-bg": var(--white),
+  "fill-bg": var(--light-400),
+  "fill-hover-bg": var(--white),
+  "form-check-input-bg": var(--light-600),
+  "box-shadow": .25rem .5rem 1rem .5rem rgba($black, .03)
+) !default;
+// scss-docs-end lightmode-variables
+
+// scss-docs-start darkmode-variables
+$darkmode: (
+  "auto": var(--dark),
+  "auto-hover": $dark-hover,
+  "auto-active": $dark-active,
+  "body-color": #9191a1,
+  "headings-color": var(--white),
+  "link-color": var(--white),
+  "link-hover-color": #e0e0e0,
+  "fill-hover-color": var(--white),
+  "body-bg": var(--dark-700),
+  "card-bg": var(--dark-500),
+  "fill-bg": var(--dark-200),
+  "fill-hover-bg": #545463,
+  "form-check-input-bg": #595969,
+  "box-shadow": none
+) !default;
+// scss-docs-end darkmode-variables
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-grid-classes: true !default;
+$enable-important-utilities: true !default;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+// scss-docs-end grid-breakpoints
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1rem !default;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+// scss-docs-end container-max-widths
+
+// Container padding
+$container-padding-x: $grid-gutter-width;
+
+// scss-docs-start font-variables
+$font-family-inter: "Inter", sans-serif !default;
+
+$font-family-base: $font-family-inter !default;
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-thin: 100 !default;
+$font-weight-extra-light: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-extra-bold: 800 !default;
+$font-weight-black: 900 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-medium !default;
+
+$line-height-tight: 1 !default;
+$line-height-snug: 1.25 !default;
+$line-height-relaxed: 1.5 !default;
+$line-height-loose: 2 !default;
+
+$line-height-base: $line-height-relaxed !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$font: $font-weight-base #{$font-size-base}/#{$line-height-base} $font-family-base !default;
+// scss-docs-end font-variables
+
+// scss-docs-start border-variables
+$border-width: 2px !default;
+$border-color: var(--fill-bg) !default;
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius: .5rem !default;
+$border-radius-pill: 50rem !default;
+// scss-docs-end border-radius-variables
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color: var(--body-color) !default;
+$body-bg: var(--body-bg) !default;
+
+// scss-docs-start type-variables
+$hr-margin-y: 2rem !default;
+$hr-bg: var(--fill-bg) !default;
+$hr-height: $border-width !default;
+
+$headings-font-weight: $font-weight-semi-bold !default;
+$headings-line-height: 1.2 !default;
+$headings-color: var(--headings-color) !default;
+
+$small-font-size: $font-size-sm !default;
+// scss-docs-start type-variables
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: var(--link-color) !default;
+$link-hover-color: var(--link-hover-color) !default;
+$link-transition: color .3s ease !default;
+
+
+// Forms
+
+// scss-docs-start form-input-variables
+$input-padding-y: .75rem !default;
+$input-padding-x: 1rem !default;
+
+$input-padding-y-sm: .5rem !default;
+$input-padding-x-sm: 1rem !default;
+
+$input-padding-lg: 1rem !default;
+
+$input-bg: var(--fill-bg) !default;
+$input-border-radius: $border-radius !default;
+
+$input-placeholder-color: var(--body-color) !default;
+
+$input-disabled-opacity: .5 !default;
+// scss-docs-end form-input-variables
+
+// scss-docs-start form-label-variables
+$form-label-margin-bottom: 1rem !default;
+$form-label-font-weight: $font-weight-semi-bold !default;
+$form-label-color: $headings-color !default;
+// scss-docs-end form-label-variables
+
+// scss-docs-start form-check-variables
+$form-check-min-height: 1.5rem !default;
+$form-check-padding-start: 2em !default;
+
+$form-check-input-width: 1em !default;
+$form-check-input-margin-bottom: .25em !default;
+$form-check-input-bg: var(--form-check-input-bg) !default;
+$form-check-input-border: 1px solid transparent !default;
+
+$form-check-input-border-radius: .25em !default;
+$form-check-radio-border-radius: 50% !default;
+
+$form-check-input-active-filter: brightness(90%) !default;
+
+$form-check-input-checked-bg-color: var(--primary) !default;
+$form-check-input-checked-bg-size: .75em !default;
+
+$form-check-input-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M4 8.5L6.5 11l6-6'/%3e%3c/svg%3e") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e") !default;
+
+$form-check-input-disabled-opacity: .5 !default;
+$form-check-label-disabled-opacity: $form-check-input-disabled-opacity !default;
+// scss-docs-end form-check-variables
+
+// scss-docs-start form-switch-variables
+$form-switch-padding-start: 2.5em !default;
+$form-switch-width: 1.5em !default;
+$form-switch-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !default;
+$form-switch-border-radius: 2em !default;
+$form-switch-transition: background-color .3s ease, background-position .3s ease !default;
+
+$form-switch-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !default;
+// scss-docs-end form-switch-variables
+
+// scss-docs-start input-group-variables
+$input-group-item-padding-x: 1rem !default;
+$input-group-item-bg: var(--fill-bg) !default;
+$input-group-item-border-radius: $border-radius !default;
+// scss-docs-end input-group-variables
+
+
+// Buttons
+
+// scss-docs-start btn-variables
+$btn-padding-y: .75rem !default;
+$btn-padding-x: 1.5rem !default;
+
+$btn-padding-y-sm: .5rem !default;
+$btn-padding-x-sm: 1rem !default;
+
+$btn-padding-y-lg: 1rem !default;
+$btn-padding-x-lg: 2rem !default;
+
+$btn-border-radius: $border-radius !default;
+$btn-transition: color .3s ease, background-color .3s ease;
+$btn-disabled-opacity: .5 !default;
+
+$btn-primary-color: var(--white) !default;
+$btn-primary-bg: var(--primary) !default;
+$btn-primary-hover-bg: #0b5ed7 !default;
+$btn-primary-active-bg: #0a58ca !default;
+
+$btn-secondary-color: var(--white) !default;
+$btn-secondary-bg: var(--secondary) !default;
+$btn-secondary-hover-bg: #5c636a !default;
+$btn-secondary-active-bg: #565e64 !default;
+
+$btn-success-color: var(--white) !default;
+$btn-success-bg: var(--success) !default;
+$btn-success-hover-bg: #157347 !default;
+$btn-success-active-bg: #146c43 !default;
+
+$btn-info-color: var(--black) !default;
+$btn-info-bg: var(--info) !default;
+$btn-info-hover-bg: #31d2f2 !default;
+$btn-info-active-bg: #3dd5f3 !default;
+
+$btn-warning-color: var(--black) !default;
+$btn-warning-bg: var(--warning) !default;
+$btn-warning-hover-bg: #ffca2c !default;
+$btn-warning-active-bg: #ffcd39 !default;
+
+$btn-danger-color: var(--white) !default;
+$btn-danger-bg: var(--danger) !default;
+$btn-danger-hover-bg: #bb2d3b !default;
+$btn-danger-active-bg: #b02a37 !default;
+
+$btn-light-color: var(--body-color) !default;
+$btn-light-bg: var(--light) !default;
+$btn-light-hover-bg: $light-hover !default;
+$btn-light-active-bg: $light-active !default;
+
+$btn-dark-color: var(--white) !default;
+$btn-dark-bg: var(--dark) !default;
+$btn-dark-hover-bg: $dark-hover !default;
+$btn-dark-active-bg: $dark-active !default;
+
+$btn-auto-color: var(--body-color) !default;
+$btn-auto-bg: var(--auto) !default;
+$btn-auto-hover-bg: var(--auto-hover) !default;
+$btn-auto-active-bg: var(--auto-active) !default;
+// scss-docs-end btn-variables
+
+// scss-docs-start transition-variables
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+$transition-fill: fill .3s ease !default;
+// scss-docs-end transition-variables
+
+// scss-docs-start dropdown-variables
+$dropdown-z-index: 1 !default;
+$dropdown-min-width: 12rem !default;
+$dropdown-padding: .75rem !default;
+$dropdown-spacer: .25rem !default;
+$dropdown-bg: var(--fill-bg) !default;
+$dropdown-border-radius: $border-radius !default;
+
+$dropdown-item-padding: .75rem !default;
+$dropdown-item-color: var(--body-color) !default;
+$dropdown-item-hover-color: var(--fill-hover-color) !default;
+$dropdown-item-hover-bg: var(--fill-hover-bg) !default;
+$dropdown-item-border-radius: $border-radius !default;
+$dropdown-item-transition: color .3s ease, background-color .3s ease;
+$dropdown-item-disabled-opacity: .5 !default;
+// scss-docs-end dropdown-variables
+
+
+// Navs
+
+// scss-docs-start nav-variables
+$nav-link-color: var(--body-color) !default;
+$nav-link-disabled-opacity: .5 !default;
+
+$nav-tabs-padding: .5rem !default;
+$nav-tabs-bg: var(--fill-bg) !default;
+$nav-tabs-border-radius: $border-radius !default;
+
+$nav-tabs-link-padding: .5rem !default;
+$nav-tabs-link-border-radius: $border-radius !default;
+
+$nav-tabs-link-active-color: var(--link-color) !default;
+$nav-tabs-link-active-bg: var(--fill-hover-bg) !default;
+
+$nav-pills-link-padding-y: .75rem !default;
+$nav-pills-link-padding-x: 1rem !default;
+$nav-pills-link-padding: $nav-pills-link-padding-y $nav-pills-link-padding-x;
+$nav-pills-link-border-radius: $border-radius !default;
+
+$nav-pills-link-active-color: var(--white) !default;
+$nav-pills-link-active-bg: var(--primary) !default;
+// scss-docs-end nav-variables
+
+
+// Navbar
+
+// scss-docs-start navbar-variables
+$navbar-padding-y: 1.5rem !default;
+$navbar-bg: var(--card-bg) !default;
+$navbar-box-shadow: var(--box-shadow) !default;
+$navbar-dropdown-spacer: 1rem !default;
+$navbar-nav-spacer: 2rem !default;
+$navbar-nav-item-spacer: 1rem !default;
+$navbar-nav-link-color: var(--link-color) !default;
+$navbar-input-max-width: 9rem !default;
+// scss-docs-end navbar-variables
+
+
+// Card
+
+// scss-docs-start card-variables
+$card-padding: 2rem !default;
+$card-bg: var(--card-bg) !default;
+$card-border-radius: $border-radius !default;
+$card-box-shadow: var(--box-shadow) !default;
+// scss-docs-end card-variables
+
+
+// Modals
+
+// scss-docs-start modal-variables
+$modal-z-index: 5 !default;
+
+$modal-dialog-margin: .5rem !default;
+$modal-dialog-margin-y-sm-up: 1.75rem !default;
+
+$modal-content-bg: var(--card-bg) !default;
+$modal-content-border-radius: $border-radius !default;
+
+$modal-backdrop-z-index: 4 !default;
+$modal-backdrop-bg: var(--black) !default;
+$modal-backdrop-opacity: .5 !default;
+
+$modal-header-padding-y: 2rem !default;
+$modal-header-padding-x: 1rem !default;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default;
+$modal-header-padding-sm-up: 2rem !default;
+$modal-header-z-index: 1 !default;
+$modal-header-box-shadow: var(--box-shadow) !default;
+$modal-body-bg: var(--body-bg) !default;
+
+$modal-sm: 300px !default;
+$modal-md: 500px !default;
+$modal-lg: 800px !default;
+$modal-xl: 1140px !default;
+
+$modal-transition: transform .3s ease !default;
+$modal-fade-transform: translate(0, -50px) !default;
+// scss-docs-end modal-variables
+
+// scss-docs-start link-variables
+$link-primary: var(--primary) !default;
+$link-primary-hover: #0b5ed7 !default;
+
+$link-secondary: var(--secondary) !default;
+$link-secondary-hover: #5c636a !default;
+
+$link-success: var(--success) !default;
+$link-success-hover: #157347 !default;
+
+$link-info: var(--info) !default;
+$link-info-hover: #31d2f2 !default;
+
+$link-warning: var(--warning) !default;
+$link-warning-hover: #ffca2c !default;
+
+$link-danger: var(--danger) !default;
+$link-danger-hover: #bb2d3b !default;
+
+$link-light: var(--light) !default;
+$link-light-hover: #e8e8e8 !default;
+
+$link-dark: var(--dark) !default;
+$link-dark-hover: #444450 !default;
+
+$link-body: var(--body-color) !default;
+$link-body-hover: var(--link-hover-color) !default;
+
+$link-headings: var(--headings-color) !default;
+$link-headings-hover: var(--link-hover-color) !default;
+// scss-docs-end link-variables
+
+// scss-docs-start position-variables
+$fixed-z-index: 3 !default;
+$sticky-z-index: 2 !default;
+// scss-docs-end position-variables
+
+// scss-docs-start position-map
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+) !default;
+// scss-docs-end position-map
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 5
+) !default;
+// scss-docs-end spacer-variables-maps

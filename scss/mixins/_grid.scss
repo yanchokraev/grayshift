@@ -1,0 +1,62 @@
+/// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+@mixin make-row($gutter: $grid-gutter-width) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+}
+
+@mixin make-col-ready($gutter: $grid-gutter-width) {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: $gutter;
+  padding-left: $gutter;
+}
+
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: percentage($size / $columns);
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+// Framework grid generation
+//
+// Used only by Grayshift to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+@mixin make-grid-columns($columns: $grid-columns, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $prefix: breakpoint-prefix($breakpoint, $breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      .#{$prefix}col {
+        flex: 1 0 0%;
+      }
+
+      .#{$prefix}col-auto {
+        @include make-col-auto();
+      }
+
+      @if $columns > 0 {
+        @for $i from 1 through $columns {
+          .#{$prefix}col-#{$i} {
+            @include make-col($i, $columns);
+          }
+        }
+      }
+    }
+  }
+}

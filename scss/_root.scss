@@ -1,0 +1,53 @@
+:root {
+  --blue: #{$blue};
+  --indigo: #{$indigo};
+  --purple: #{$purple};
+  --pink: #{$pink};
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --green: #{$green};
+  --teal: #{$teal};
+  --cyan: #{$cyan};
+  --white: #{$white};
+  --gray: #{$gray};
+  --black: #{$black};
+  --light-100: #{$light-100};
+  --light-200: #{$light-200};
+  --light-300: #{$light-300};
+  --light-400: #{$light-400};
+  --light-500: #{$light-500};
+  --light-600: #{$light-600};
+  --light-700: #{$light-700};
+  --light-800: #{$light-800};
+  --light-900: #{$light-900};
+  --dark-100: #{$dark-100};
+  --dark-200: #{$dark-200};
+  --dark-300: #{$dark-300};
+  --dark-400: #{$dark-400};
+  --dark-500: #{$dark-500};
+  --dark-600: #{$dark-600};
+  --dark-700: #{$dark-700};
+  --dark-800: #{$dark-800};
+  --dark-900: #{$dark-900};
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --success: #{$success};
+  --info: #{$info};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --light: #{$light};
+  --dark: #{$dark};
+
+  @each $property, $value in $lightmode {
+    --#{$property}: #{$value};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      @each $property, $value in $darkmode {
+        --#{$property}: #{$value};
+      }
+    }
+  }
+}

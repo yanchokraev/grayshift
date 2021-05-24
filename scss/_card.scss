@@ -1,0 +1,7 @@
+.card {
+  position: relative;
+  padding: $card-padding;
+  background-color: $card-bg;
+  @include border-radius($card-border-radius);
+  @include box-shadow($card-box-shadow);
+}

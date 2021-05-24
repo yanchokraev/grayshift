@@ -1,0 +1,102 @@
+// The dropdown wrapper (`<div>`)
+.dropup,
+.dropend,
+.dropdown,
+.dropstart {
+  position: relative;
+}
+
+// The dropdown menu
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: $dropdown-z-index;
+  display: none; // none by default, but block on "open" of the menu
+  min-width: $dropdown-min-width;
+  padding: $dropdown-padding;
+  margin-top: $dropdown-spacer;
+  background-color: $dropdown-bg;
+  background-clip: padding-box;
+  @include border-radius($dropdown-border-radius);
+
+  &.show {
+    display: block;
+  }
+}
+
+// scss-docs-start responsive-breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $prefix: breakpoint-prefix($breakpoint, $grid-breakpoints);
+
+    .#{$prefix}dropdown-menu-start {
+      right: auto;
+      left: 0;
+    }
+
+    .#{$prefix}dropdown-menu-end {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+// scss-docs-end responsive-breakpoints
+
+// Allow for dropdowns to go bottom up (aka, dropup-menu)
+// Just add .dropup after the standard .dropdown class and you're set.
+.dropup {
+  .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: $dropdown-spacer;
+  }
+}
+
+.dropend {
+  .dropdown-menu {
+    top: 0;
+    right: auto;
+    left: 100%;
+    margin-top: 0;
+    margin-left: $dropdown-spacer;
+  }
+}
+
+.dropstart {
+  .dropdown-menu {
+    top: 0;
+    right: 100%;
+    left: auto;
+    margin-top: 0;
+    margin-right: $dropdown-spacer;
+  }
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// For <button>s`
+.dropdown-item {
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: $dropdown-item-padding;
+  clear: both;
+  color: $dropdown-item-color;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background-color: transparent; // For `<button>`s
+  @include border-radius($dropdown-item-border-radius);
+  @include transition($dropdown-item-transition);
+
+  &:is(:hover, :focus, :active, .active) {
+    color: $dropdown-item-hover-color;
+    background-color: $dropdown-item-hover-bg;
+    outline: 0;
+  }
+
+  &:is(:disabled, .disabled) {
+    pointer-events: none;
+    opacity: $dropdown-item-disabled-opacity;
+  }
+}

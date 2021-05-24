@@ -1,0 +1,102 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s, `<ul>`s or `<ol>`s.
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  color: $nav-link-color;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: $nav-link-disabled-opacity;
+  }
+}
+
+//
+// Tabs
+//
+
+.nav-tabs {
+  padding: $nav-tabs-padding;
+  background-color: $nav-tabs-bg;
+  @include border-radius($nav-tabs-border-radius);
+
+  .nav-link {
+    padding: $nav-tabs-link-padding;
+    @include border-radius($nav-tabs-link-border-radius);
+    transition-property: color, background-color;
+  }
+
+  .nav-link:is(.active, .show) {
+    color: $nav-tabs-link-active-color;
+    background-color: $nav-tabs-link-active-bg;
+  }
+}
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    padding: $nav-pills-link-padding;
+    @include border-radius($nav-pills-link-border-radius);
+
+    &:is(.active, .show) {
+      color: $nav-pills-link-active-color;
+      background-color: $nav-pills-link-active-bg;
+    }
+  }
+}
+
+//
+// Justified variants
+//
+
+.nav-fill {
+  > .nav-link,
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.nav-justified {
+  > .nav-link,
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.nav-fill,
+.nav-justified {
+  .nav-item {
+    .nav-link {
+      width: 100%; // Make sure button will grow
+    }
+  }
+}
+
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}

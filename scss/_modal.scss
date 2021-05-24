@@ -1,0 +1,155 @@
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $modal-z-index;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // Prevent Chrome on Windows from adding a focus outline.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: $modal-dialog-margin;
+  // allow clicks to pass through for custom click handling to close modal
+  pointer-events: none;
+
+  // When fading in the modal, animate it to slide down
+  .modal.fade & {
+    @include transition($modal-transition);
+    transform: $modal-fade-transform;
+  }
+
+  .modal.show & {
+    transform: none;
+  }
+}
+
+.modal-dialog-scrollable {
+  height: subtract(100%, $modal-dialog-margin * 2);
+
+  .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+  }
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: subtract(100%, $modal-dialog-margin * 2);
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  @include border-radius($modal-content-border-radius);
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $modal-backdrop-z-index;
+  width: 100vw;
+  height: 100vh;
+  background-color: $modal-backdrop-bg;
+
+  // Fade for backdrop
+  &.fade {
+    opacity: 0;
+  }
+
+  &.show {
+    opacity: $modal-backdrop-opacity;
+  }
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: $modal-header-padding;
+}
+
+.modal-header,
+.modal-footer {
+  z-index: $modal-header-z-index;
+  @include box-shadow($modal-header-box-shadow);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-body {
+  position: relative;
+  // Enable `flex-grow: 1` so that the body take up as much space as possible
+  // when there should be a fixed height on `.modal-dialog`.
+  flex: 1 1 auto;
+  background-color: $modal-body-bg;
+}
+
+// Scale up the modal
+@include media-breakpoint-up(sm) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    max-width: $modal-md;
+    margin: $modal-dialog-margin-y-sm-up auto;
+  }
+  .modal-dialog-scrollable {
+    height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+  }
+  .modal-dialog-centered {
+    min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
+  }
+  .sm\:modal {
+    max-width: $modal-sm;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: $modal-header-padding-sm-up;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .lg\:,
+  .xl\: {
+    &modal {
+      max-width: $modal-lg;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .xl\:modal {
+    max-width: $modal-xl;
+  }
+}

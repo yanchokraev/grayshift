@@ -1,0 +1,207 @@
+.btn {
+  display: inline-block;
+  padding: $btn-padding-y $btn-padding-x;
+  text-align: center;
+  vertical-align: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  @include border-radius($btn-border-radius);
+  @include transition($btn-transition);
+
+  &:is(:disabled, .disabled),
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+  }
+}
+
+.btn-sm {
+  padding: $btn-padding-y-sm $btn-padding-x-sm;
+}
+
+.btn-lg {
+  padding: $btn-padding-y-lg $btn-padding-x-lg;
+}
+
+.btn-primary {
+  color: $btn-primary-color;
+  background-color: $btn-primary-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-primary-color;
+    background-color: $btn-primary-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-primary-color;
+    background-color: $btn-primary-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-primary-color;
+    background-color: $btn-primary-bg;
+  }
+}
+
+.btn-secondary {
+  color: $btn-secondary-color;
+  background-color: $btn-secondary-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-secondary-color;
+    background-color: $btn-secondary-bg;
+  }
+}
+
+.btn-success {
+  color: $btn-success-color;
+  background-color: $btn-success-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-success-color;
+    background-color: $btn-success-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-success-color;
+    background-color: $btn-success-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-success-color;
+    background-color: $btn-success-bg;
+  }
+}
+
+.btn-info {
+  color: $btn-info-color;
+  background-color: $btn-info-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-info-color;
+    background-color: $btn-info-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-info-color;
+    background-color: $btn-info-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-info-color;
+    background-color: $btn-info-bg;
+  }
+}
+
+.btn-warning {
+  color: $btn-warning-color;
+  background-color: $btn-warning-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-warning-color;
+    background-color: $btn-warning-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-warning-color;
+    background-color: $btn-warning-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-warning-color;
+    background-color: $btn-warning-bg;
+  }
+}
+
+.btn-danger {
+  color: $btn-danger-color;
+  background-color: $btn-danger-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-danger-color;
+    background-color: $btn-danger-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-danger-color;
+    background-color: $btn-danger-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-danger-color;
+    background-color: $btn-danger-bg;
+  }
+}
+
+.btn-light {
+  color: $btn-light-color;
+  background-color: $btn-light-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-light-color;
+    background-color: $btn-light-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-light-color;
+    background-color: $btn-light-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-light-color;
+    background-color: $btn-light-bg;
+  }
+}
+
+.btn-dark {
+  color: $btn-dark-color;
+  background-color: $btn-dark-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-dark-color;
+    background-color: $btn-dark-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-dark-color;
+    background-color: $btn-dark-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-dark-color;
+    background-color: $btn-dark-bg;
+  }
+}
+
+.btn-auto {
+  color: $btn-auto-color;
+  background-color: $btn-auto-bg;
+
+  &:is(:hover, :focus) {
+    color: $btn-auto-color;
+    background-color: $btn-auto-hover-bg;
+  }
+
+  &:is(:active, .active, .show) {
+    color: $btn-auto-color;
+    background-color: $btn-auto-active-bg;
+  }
+
+  &:is(:disabled, .disabled) {
+    color: $btn-auto-color;
+    background-color: $btn-auto-bg;
+  }
+}

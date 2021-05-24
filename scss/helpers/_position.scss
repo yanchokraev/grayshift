@@ -1,0 +1,27 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $fixed-z-index;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $fixed-z-index;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $prefix: breakpoint-prefix($breakpoint, $grid-breakpoints);
+
+    .#{$prefix}sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: $sticky-z-index;
+    }
+  }
+}

@@ -1,0 +1,180 @@
+//
+// General form controls (plus a few specific high-level interventions)
+//
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: $input-padding-y $input-padding-x;
+  background-color: $input-bg;
+  background-clip: padding-box;
+  border: 0;
+  @include border-radius($input-border-radius);
+
+  &:focus {
+    outline: 0;
+  }
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity;
+    opacity: 1;
+  }
+
+  // Disabled
+  &:disabled {
+    opacity: $input-disabled-opacity;
+  }
+}
+
+// Form control sizing
+//
+// Build on `.form-control` with modifier classes to decrease or increase the
+// height of form controls.
+.form-control-sm {
+  padding: $input-padding-y-sm $input-padding-x-sm;
+}
+
+.form-control-lg {
+  padding: $input-padding-lg;
+}
+
+
+// Label
+.form-label {
+  margin-bottom: $form-label-margin-bottom;
+  font-weight: $form-label-font-weight;
+  color: $form-label-color;
+}
+
+//
+// Check/radio
+//
+
+.form-check {
+  display: block;
+  min-height: $form-check-min-height;
+  padding-left: $form-check-padding-start;
+
+  .form-check-input {
+    float: left;
+    margin-left: $form-check-padding-start * -1;
+  }
+}
+
+.form-check-input {
+  width: $form-check-input-width;
+  height: $form-check-input-width;
+  margin-top: $form-check-input-margin-bottom;
+  vertical-align: top;
+  background-color: $form-check-input-bg;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: $form-check-input-border;
+  -webkit-appearance: none;
+
+  &[type="checkbox"] {
+    @include border-radius($form-check-input-border-radius);
+  }
+
+  &[type="radio"] {
+    border-radius: $form-check-radio-border-radius;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    filter: $form-check-input-active-filter;
+  }
+
+  &:checked {
+    background-color: $form-check-input-checked-bg-color;
+    background-size: $form-check-input-checked-bg-size;
+
+    &[type="checkbox"] {
+      background-image: $form-check-input-checked-bg-image;
+    }
+
+    &[type="radio"] {
+      background-image: $form-check-radio-checked-bg-image;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: $form-check-input-disabled-opacity;
+  }
+
+  &[disabled],
+  &:disabled {
+    ~ .form-check-label {
+      opacity: $form-check-label-disabled-opacity;
+    }
+  }
+}
+
+//
+// Switch
+//
+
+.form-switch {
+  padding-left: $form-switch-padding-start;
+
+  .form-check-input {
+    width: $form-switch-width;
+    margin-left: $form-switch-padding-start * -1;
+    background-image: $form-switch-bg-image;
+    background-position: left center;
+    background-size: contain;
+    @include border-radius($form-switch-border-radius);
+    @include transition($form-switch-transition);
+
+    &:checked {
+      background-image: $form-switch-checked-bg-image;
+      background-position: right center;
+    }
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+
+  > :not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > :not(:first-child) {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  > .form-control {
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+
+    &:not(:last-child) {
+      padding-right: 0;
+    }
+
+    &:not(:first-child) {
+      padding-left: 0;
+    }
+  }
+}
+
+.input-group-item {
+  display: flex;
+  align-items: center;
+  padding-right: $input-group-item-padding-x;
+  padding-left: $input-group-item-padding-x;
+  background-color: $input-group-item-bg;
+  @include border-radius($input-group-item-border-radius);
+}

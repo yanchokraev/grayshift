@@ -1,0 +1,40 @@
+@mixin generate-utility($utility, $prefix) {
+  $values: map-get($utility, values);
+
+  @if type-of($values) == "string" or type-of(nth($values, 1)) != "list" {
+    $values: zip($values, $values);
+  }
+
+  @each $key, $value in $values {
+    $properties: map-get($utility, property);
+
+    @if type-of($properties) == "string" {
+      $properties: append((), $properties);
+    }
+
+    $property-class: if(map-has-key($utility, class), map-get($utility, class), nth($properties, 1));
+    $property-class: if($property-class == null, "", $property-class);
+
+    $state: if(map-has-key($utility, state), map-get($utility, state), ());
+
+    $prefix: if($property-class == "" and str-slice($prefix, 1, 1) == "-", str-slice($prefix, 2), $prefix);
+
+    $property-class-modifier: if($key, if($property-class == "" and $prefix == "", "", "-") + $key, "");
+
+    @if $value != null {
+      .#{$prefix + $property-class + $property-class-modifier} {
+        @each $property in $properties {
+          #{$property}: $value if($enable-important-utilities, !important, null);
+        }
+      }
+
+      @each $pseudo in $state {
+        .#{$prefix + $property-class + $property-class-modifier}-#{$pseudo}:#{$pseudo} {
+          @each $property in $properties {
+            #{$property}: $value if($enable-important-utilities, !important, null);
+          }
+        }
+      }
+    }
+  }
+}

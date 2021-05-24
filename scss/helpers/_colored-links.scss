@@ -1,0 +1,79 @@
+.link-primary {
+  color: $link-primary;
+
+  &:hover {
+    color: $link-primary-hover;
+  }
+}
+
+.link-secondary {
+  color: $link-secondary;
+
+  &:hover {
+    color: $link-secondary-hover;
+  }
+}
+
+.link-success {
+  color: $link-success;
+
+  &:hover {
+    color: $link-success-hover;
+  }
+}
+
+.link-info {
+  color: $link-info;
+
+  &:hover {
+    color: $link-info-hover;
+  }
+}
+
+.link-warning {
+  color: $link-warning;
+
+  &:hover {
+    color: $link-warning-hover;
+  }
+}
+
+.link-danger {
+  color: $link-danger;
+
+  &:hover {
+    color: $link-danger-hover;
+  }
+}
+
+.link-light {
+  color: $link-light;
+
+  &:hover {
+    color: $link-light-hover;
+  }
+}
+
+.link-dark {
+  color: $link-dark;
+
+  &:hover {
+    color: $link-dark-hover;
+  }
+}
+
+.link-body {
+  color: $link-body;
+
+  &:hover {
+    color: $link-body-hover;
+  }
+}
+
+.link-headings {
+  color: $link-headings;
+
+  &:hover {
+    color: $link-headings-hover;
+  }
+}
