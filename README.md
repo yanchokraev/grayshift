@@ -36,7 +36,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v1.0.0.zip)
+- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v1.0.1.zip)
 - Clone the repo: `git clone https://github.com/yanchokraev/grayshift.git`
 
 Read the [Getting started page](https://grayshift.io/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
