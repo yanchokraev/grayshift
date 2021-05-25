@@ -19,7 +19,7 @@
   <a href="https://grayshift.io/icons">Icons</a>
 </p>
 
-<img src="https://grayshift.io/blocks.png" alt="grayshift light and dark">
+<img src="https://grayshift.io/blockss.png" alt="grayshift light and dark">
 
 
 ## Table of contents
