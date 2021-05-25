@@ -1,6 +1,6 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.0): alert.js
+* Grayshift (v1.0.1): alert.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */

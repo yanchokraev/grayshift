@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.0.0 (https://grayshift.io)
+* Grayshift v1.0.1 (https://grayshift.io)
 * Copyright 2019-2021 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -1008,7 +1008,6 @@ iframe {
 .dropdown,
 .dropstart {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-menu {

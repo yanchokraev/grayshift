@@ -470,8 +470,8 @@ $utilities: map-merge(
       values: (
         null: $border-radius,
         0: 0,
-        circle: 50%,
-        pill: $border-radius-pill
+        pill: $border-radius-pill,
+        circle: 50%
       )
     ),
     "rounded-top": (

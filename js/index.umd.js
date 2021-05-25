@@ -1,6 +1,6 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.0): index.umd.js
+* Grayshift (v1.0.1): index.umd.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */

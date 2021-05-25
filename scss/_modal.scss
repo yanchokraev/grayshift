@@ -123,15 +123,19 @@
     max-width: $modal-md;
     margin: $modal-dialog-margin-y-sm-up auto;
   }
+
   .modal-dialog-scrollable {
     height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
   }
+
   .modal-dialog-centered {
     min-height: subtract(100%, $modal-dialog-margin-y-sm-up * 2);
   }
-  .sm\:modal {
+
+  .modal-sm {
     max-width: $modal-sm;
   }
+
   .modal-header,
   .modal-body,
   .modal-footer {
@@ -140,16 +144,14 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .lg\:,
-  .xl\: {
-    &modal {
-      max-width: $modal-lg;
-    }
+  .modal-lg,
+  .modal-xl {
+    max-width: $modal-lg;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .xl\:modal {
+  .modal-xl {
     max-width: $modal-xl;
   }
 }

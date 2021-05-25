@@ -86,6 +86,7 @@
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: transparent; // For `<button>`s
+  border: 0; // For `<button>`s
   @include border-radius($dropdown-item-border-radius);
   @include transition($dropdown-item-transition);
 

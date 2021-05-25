@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.0.0 (https://grayshift.io)
+* Grayshift v1.0.1 (https://grayshift.io)
 * Copyright 2019-2021 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -21,7 +21,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): alert.js
+      * Grayshift (v1.0.1): alert.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -96,7 +96,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): collapse.js
+      * Grayshift (v1.0.1): collapse.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -243,7 +243,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): dropdown.js
+      * Grayshift (v1.0.1): dropdown.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -328,7 +328,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): modal.js
+      * Grayshift (v1.0.1): modal.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -483,7 +483,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): dropdown.js
+      * Grayshift (v1.0.1): dropdown.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -622,7 +622,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.0): index.umd.js
+      * Grayshift (v1.0.1): index.umd.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
