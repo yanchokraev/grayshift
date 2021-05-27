@@ -56,8 +56,8 @@ Grayshift's documentation it's publicly hosted on our website at <https://graysh
 
 Get updates on Grayshift's development and chat with the project maintainers and community members.
 
-- Follow [@wearegrayshift on Twitter](https://twitter.com/wearegrayshift).
-- Like [@wearegrayshift on Facebook](https://www.facebook.com/wearegrayshift).
+- Follow [@grayshiftio on Twitter](https://twitter.com/grayshiftio).
+- Like [@grayshiftio on Facebook](https://www.facebook.com/grayshiftio).
 
 
 ## Versioning
