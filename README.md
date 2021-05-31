@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://grayshift.io">
-    <img src="https://grayshift.io/svg/favicon.svg" width="80" height="80" alt="Grayshift's logo">
+    <img src="https://grayshift.io/dist/img/logo.svg" width="80" height="80" alt="Grayshift's logo">
   </a>
 </p>
 
