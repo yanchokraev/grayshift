@@ -1,11 +1,15 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.1): alert.js
+* Grayshift (v1.0.2): alert.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */
 
-import { dataDismissString, fadeString, showString } from './dom/selectors';
+import {
+  dataDismissString,
+  fadeString,
+  showString
+} from './dom/selectors';
 
 // Alert
 const Alert = (() => {

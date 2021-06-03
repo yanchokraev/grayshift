@@ -1,11 +1,14 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.1): dropdown.js
+* Grayshift (v1.0.2): dropdown.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */
 
-import { dataToggleString, showString } from './dom/selectors';
+import {
+  dataToggleString,
+  showString
+} from './dom/selectors';
 
 // Dropdown
 const Dropdown = (() => {

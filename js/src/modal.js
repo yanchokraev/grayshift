@@ -1,11 +1,16 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.1): modal.js
+* Grayshift (v1.0.2): modal.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */
 
-import { dataToggleString, dataDismissString, fadeString, showString } from './dom/selectors';
+import {
+  dataToggleString,
+  dataDismissString,
+  fadeString,
+  showString
+} from './dom/selectors';
 import getTarget from './util/index';
 
 // Modal
@@ -33,6 +38,8 @@ const Modal = (() => {
           // Check for the "fade" class on the modal
           const modalHasAnimation = modal.classList.contains(fadeString);
 
+          // Remove the keyboard focus from the trigger
+          document.activeElement.blur();
           // Add "overflow: hidden" on the body
           document.body.style.overflow = 'hidden';
           // Create a new div element

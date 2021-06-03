@@ -353,7 +353,7 @@ $utilities: map-merge(
         dark: var(--dark),
         white: var(--white),
         black: var(--black),
-        muted: hsla(0, 0%, 100%, .75),
+        muted: rgba(255, 255, 255, .75),
         body: var(--body-color),
         reset: inherit
       )

@@ -1,11 +1,15 @@
 /**
 * --------------------------------------------------------------------------
-* Grayshift (v1.0.1): collapse.js
+* Grayshift (v1.0.2): collapse.js
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 * --------------------------------------------------------------------------
 */
 
-import { dataToggleString, dataParentString, showString } from './dom/selectors';
+import {
+  dataToggleString,
+  dataParentString,
+  showString
+} from './dom/selectors';
 import getTarget from './util/index';
 
 // Collapse

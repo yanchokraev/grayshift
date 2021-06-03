@@ -1,5 +1,5 @@
 /*!
-* Grayshift v1.0.1 (https://grayshift.io)
+* Grayshift v1.0.2 (https://grayshift.io)
 * Copyright 2019-2021 Grayshift
 * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
 */
@@ -21,7 +21,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): alert.js
+      * Grayshift (v1.0.2): alert.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -96,7 +96,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): collapse.js
+      * Grayshift (v1.0.2): collapse.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -243,7 +243,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): dropdown.js
+      * Grayshift (v1.0.2): dropdown.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -328,7 +328,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): modal.js
+      * Grayshift (v1.0.2): modal.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -358,6 +358,8 @@
                 // Check for the "fade" class on the modal
                 const modalHasAnimation = modal.classList.contains(fadeString);
 
+                // Remove the keyboard focus from the trigger
+                document.activeElement.blur();
                 // Add "overflow: hidden" on the body
                 document.body.style.overflow = 'hidden';
                 // Create a new div element
@@ -483,7 +485,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): dropdown.js
+      * Grayshift (v1.0.2): dropdown.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
@@ -622,7 +624,7 @@
 
       /**
       * --------------------------------------------------------------------------
-      * Grayshift (v1.0.1): index.umd.js
+      * Grayshift (v1.0.2): index.umd.js
       * Licensed under MIT (https://opensource.org/licenses/mit-license.php)
       * --------------------------------------------------------------------------
       */
