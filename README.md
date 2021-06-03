@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://grayshift.io">
-    <img src="https://grayshift.io/svg/favicon.svg" width="80" height="80" alt="Grayshift's logo">
+    <img src="https://grayshift.io/dist/img/logo.svg" width="80" height="80" alt="Grayshift's logo">
   </a>
 </p>
 
@@ -19,7 +19,7 @@
   <a href="https://grayshift.io/icons">Icons</a>
 </p>
 
-<img src="https://grayshift.io/blocks.png" alt="grayshift light and dark">
+<img src="https://grayshift.io/grayshift.png" alt="grayshift light and dark">
 
 
 ## Table of contents
@@ -36,7 +36,7 @@
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v1.0.0.zip)
+- [Download the latest release](https://github.com/yanchokraev/grayshift/archive/v1.0.1.zip)
 - Clone the repo: `git clone https://github.com/yanchokraev/grayshift.git`
 
 Read the [Getting started page](https://grayshift.io/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
@@ -56,8 +56,8 @@ Grayshift's documentation it's publicly hosted on our website at <https://graysh
 
 Get updates on Grayshift's development and chat with the project maintainers and community members.
 
-- Follow [@wearegrayshift on Twitter](https://twitter.com/wearegrayshift).
-- Like [@wearegrayshift on Facebook](https://www.facebook.com/wearegrayshift).
+- Follow [@grayshiftio on Twitter](https://twitter.com/grayshiftio).
+- Like [@grayshiftio on Facebook](https://www.facebook.com/grayshiftio).
 
 
 ## Versioning
