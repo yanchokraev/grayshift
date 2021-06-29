@@ -14,7 +14,7 @@
   <br>
   <a href="https://grayshift.io/examples/">Examples</a>
   ·
-  <a href="https://craftwork.io">Themes</a>
+  Themes (Soon)
   ·
   <a href="https://grayshift.io/icons">Icons</a>
 </p>
